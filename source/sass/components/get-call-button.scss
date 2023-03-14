@@ -1,0 +1,12 @@
+.get-call-button {
+  width: 160px;
+  min-height: 40px;
+  margin: 10px;
+
+  border: 1px solid $color-white-text;
+  border-radius: 3px;
+
+  @include vp-770 {
+    display: none;
+  }
+}

@@ -10,12 +10,20 @@
 @import "variables";
 @import "mixins";
 @import "global/fonts";
+@import "global/reboot.scss";
 @import "global/utils.scss";
+@import "global/global.scss";
 
 // Components
 // ---------------------------------
 
-@import "./components/button.scss"
+@import "./components/button.scss";
+@import "./components/container.scss";
+@import "./components/get-call-button.scss";
+@import "./components/header-contacts.scss";
+@import "./components/logo.scss";
+@import "./components/main-header.scss";
+@import "./components/body-container.scss";
 
 // ---------------------------------
 

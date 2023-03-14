@@ -6,22 +6,28 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
+@mixin vp-1920 {
+  @media (max-width: $vp-1920) {
     @content;
   }
 }
 
-@mixin vp-769 {
-  @media (max-width: ($vp-770 - 1px)) {
+@mixin vp-770 {
+  @media (max-width: $vp-770) {
     @content;
   }
 }
 
-@mixin vp-319 {
-  @media (max-width: ($vp-320 - 1px)) {
+@mixin vp-320 {
+  @media (max-width: $vp-320) {
     @content;
   }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
 }
 // ---------------------------------
 

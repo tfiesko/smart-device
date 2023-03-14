@@ -9,12 +9,30 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+    <div class="body-container wrapper">
+      <header class="main-header">
+        <div class="main-header__container container">
+          <a class="logo main-header__item" href="index.html">
+            <picture>
+              <source media="(max-width: 320px)" srcset="img/svg/logo-mobile.svg">
+              <img src="img/svg/main-logo.svg" alt="Smart Device">
+            </picture>
+          </a>
+          <section class="main-header__contacts main-header__item header-contacts" aria-label="Контакты">
+            <a class="header-contacts__item header-contacts__item--mail" href="mailto:info@sd.ru" aria-label="Почта">
+              <span class="header-contacts__item-text">info@sd.ru</span>
+            </a>
+            <a class="header-contacts__item header-contacts__item--tel" href="tel:+74950005252" aria-label="Телефон">
+              <span class="header-contacts__item-text">+7 (495) 000 52 52</span>
+            </a>
+          </section>
+          <a href="#" class="main-header__get-call main-header__item get-call-button button">
+            Заказать звонок
+          </a>
+        </div>
       </header>
       <main>
-        <button class="button"> sadadada </button>
+
       </main>
       <footer>
         <div class="container"></div>

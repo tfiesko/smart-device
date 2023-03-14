@@ -1,0 +1,41 @@
+.main-header {
+  position: fixed;
+
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 50px;
+
+  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @include vp-770 {
+    min-height: 60px;
+  }
+
+  @include vp-320 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: inherit;
+  max-width: 1205px;
+  padding-right: 35px;
+
+  @include vp-770 {
+    padding-right: 5px;
+  }
+
+  @include vp-320 {
+    padding-right: 10px;
+  }
+}
+
+.main-header__contacts {
+  flex-grow: 1;
+}
+

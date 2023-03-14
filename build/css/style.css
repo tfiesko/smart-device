@@ -22,6 +22,149 @@
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Placeholder", "Arial", sans-serif;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
+  box-shadow: inset 0 0 0 1000px #ffffff;
+  -webkit-text-fill-color: #000000;
+}
+
+input,
+textarea {
+  border-radius: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+input:invalid,
+textarea:invalid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+select {
+  border-radius: 0;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+select,
+textarea,
+input:matches([type=email],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -99,6 +242,13 @@
   outline: none;
 }
 
+body {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.5px;
+}
+
 .button {
   display: block;
   padding: 10px 15px;
@@ -106,10 +256,207 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #f2f5f6;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.get-call-button {
+  width: 160px;
+  min-height: 40px;
+  margin: 10px;
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 60px;
+  max-width: 43.3%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-contacts__item {
+  position: relative;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 8px 10px 8px 46px;
+  color: #f2f5f6;
+  text-decoration: none;
+}
+
+.header-contacts__item--mail::before,
+.header-contacts__item--tel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.header-contacts__item--mail::before {
+  background-image: url("../img/svg/email-icon.svg");
+}
+
+.header-contacts__item--tel::before {
+  background-image: url("../img/svg/phone-call-icon.svg");
+}
+
+.logo {
+  width: 215px;
+  height: 55px;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background-image: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.main-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: inherit;
+  max-width: 1205px;
+  padding-right: 35px;
+}
+
+.main-header__contacts {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
+
+@media (max-width: 770px) {
+  .get-call-button {
+    display: none;
+  }
+
+  .header-contacts {
+    max-width: 100px;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  .header-contacts__item {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .header-contacts__item--mail::before,
+  .header-contacts__item--tel::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .header-contacts__item-text {
+    display: none;
+  }
+
+  .main-header {
+    min-height: 60px;
+  }
+
+  .main-header__container {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-contacts {
+    padding-bottom: 5px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .main-header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .main-header__container {
+    padding-right: 10px;
+  }
 }
