@@ -1,0 +1,38 @@
+.hero-block {
+  min-height: 880px;
+  padding: 50px;
+  padding-top: 305px;
+
+  color: $color-white-text;
+
+  background-color: #535B63;
+}
+
+.hero-block__wrapper {
+  width: 720px;
+  margin-left: 425px;
+}
+
+.hero-block__title {
+  font-family: "Roboto Condensed", "arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+}
+
+.hero-block__description {
+  width: 680px;
+
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.hero-block__button {
+  width: 410px;
+  min-height: 55px;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  background-color: $color-aqua-blue;
+  border-radius: 3px;
+}

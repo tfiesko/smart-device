@@ -25,6 +25,7 @@
   min-height: inherit;
   max-width: 1205px;
   padding-right: 35px;
+  margin: 0 auto;
 
   @include vp-770 {
     padding-right: 5px;
