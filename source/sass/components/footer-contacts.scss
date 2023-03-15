@@ -1,0 +1,46 @@
+.footer-contacts {
+  max-width: 308px;
+
+  @include vp-770 {
+    max-width: 100%;
+  }
+}
+
+.footer-contacts__title {
+  margin-bottom: 20px;
+
+  font-family: "Roboto Condensed", "arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+}
+
+.footer-contacts__phone-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-style: normal;
+
+  @include vp-770 {
+    padding-left: 25px;
+  }
+}
+
+.footer-contacts__phone-item {
+  margin-bottom: 10px;
+}
+
+.footer-contacts__address {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-style: normal;
+
+  @include vp-770 {
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+}

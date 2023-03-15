@@ -3,6 +3,10 @@
   width: 215px;
   height: 55px;
   margin-bottom: 30px;
+
+  @include vp-1100 {
+    margin-bottom: 10px;
+  }
 }
 
 .footer-logo__img {

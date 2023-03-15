@@ -11,7 +11,7 @@
   <body>
     <div class="body-container wrapper">
       <header class="main-header">
-        <div class="main-header__container container">
+        <div class="main-header__container">
           <a class="logo main-header__item" href="index.html">
             <picture>
               <source media="(max-width: 320px)" srcset="img/svg/logo-mobile.svg">
@@ -35,7 +35,7 @@
 
       </main>
       <footer class="page-footer">
-        <div class="page-footer__container container">
+        <div class="page-footer__container">
           <div class="page-footer__logo-and-social-wrapper">
             <a class="footer-logo" href="index.html">
               <img class="footer-logo__img" src="img/svg/main-logo.svg" width="215" height="55" alt="Smart Device">
@@ -64,13 +64,14 @@
             </li>
           </ul>
           </div>
-          <div class="page-footer__navigation-and-contacts">
-            <nav class="footer-nav">
-              <h2 class="footer-nav__title">Разделы сайта</h2>
-              <div class="footer-nav__wrapper">
+          <div class="page-footer__navigation-and-contacts accordion" data-accordion="parent" data-single data-destroy="(max-width: 770px)">
+            <nav class="footer-nav accordion__element" data-accordion="element">
+              <h3 class="footer-nav__title accordion__element-title">Разделы сайта</h3>
+              <button class="accordion__button" type="button" data-accordion="button">Разделы сайта</button>
+              <div class="footer-nav__wrapper accordion__content" data-accordion="content">
                 <ul class="footer-nav__list">
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">О компании</a>
+                    <a class="footer-nav__link" href="#">О Компании</a>
                   </li>
                   <li class="footer-nav__item">
                     <a class="footer-nav__link" href="#">Продукты</a>
@@ -95,16 +96,17 @@
                 </ul>
               </div>
             </nav>
-            <article class="footer-contacts">
-              <h2 class="footer-contacts__title">Наш офис</h2>
-              <address>
-                <p>
+            <article class="footer-contacts accordion__element" data-accordion="element">
+              <h3 class="footer-contacts__title accordion__element-title">Наш офис</h3>
+              <button class="accordion__button" type="button" data-accordion="button">Наш офис</button>
+              <address class="accordion__content" data-accordion="content">
+                <p class="footer-contacts__address">
                   г. Мытищи, Олимпийский проспект, д.10
                 </p>
                 <ul class="footer-contacts__phone-list">
-                  <li>+7 (495) 589-40-50</li>
-                  <li>+7 (925) 389-58-29</li>
-                  <li>+7 (925) 364-78-13</li>
+                  <li class="footer-contacts__phone-item">+7 (495) 589-40-50</li>
+                  <li class="footer-contacts__phone-item">+7 (925) 389-58-29</li>
+                  <li class="footer-contacts__phone-item">+7 (925) 364-78-13</li>
                 </ul>
               </address>
             </article>

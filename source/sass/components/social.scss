@@ -9,6 +9,10 @@
   margin-left: 10px;
 
   list-style: none;
+
+  @include vp-770 {
+    margin-left: 0;
+  }
 }
 
 .social__item {
