@@ -1,0 +1,29 @@
+.page-footer {
+  padding: 20px 50px;
+
+  color: $color-white-text;
+
+  background-color: #041827;
+}
+
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-footer__navigation-and-contacts {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  flex-grow: 1;
+  max-width: 805px;
+
+  @include vp-320 {
+    grid-template-columns: auto;
+  }
+}
+
+.page-footer__logo-and-social-wrapper {
+  padding-top: 15px;
+  margin-right: auto;
+}

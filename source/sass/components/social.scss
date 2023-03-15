@@ -1,0 +1,29 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  column-gap: 15px;
+  row-gap: 5px;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+
+  list-style: none;
+}
+
+.social__item {
+
+}
+
+.social__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+}
