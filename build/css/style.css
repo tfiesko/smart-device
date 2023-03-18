@@ -556,6 +556,8 @@ body {
   padding-top: 305px;
   color: #f2f5f6;
   background-color: #535B63;
+  background-image: url("../img/main-block-background-desktop.jpg");
+  background-size: cover;
 }
 
 .hero-block__wrapper {
@@ -589,6 +591,10 @@ body {
   line-height: 21px;
   background-color: #00b2ff;
   border-radius: 3px;
+}
+
+.hero-block__button-mobile-text {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -631,6 +637,12 @@ body {
     }
   }
 */
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 772px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 772px), (min-resolution: 144dpi) and (min-width: 772px), (min-resolution: 1.5dppx) and (min-width: 772px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-desktop@2x.jpg");
+  }
+}
 
 @media (max-width: 1100px) {
   .get-call-button {
@@ -734,6 +746,18 @@ body {
 
   .hero-block__button {
     margin-left: 45px;
+  }
+}
+
+@media (max-width: 771px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-tablet.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 771px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 771px), (min-resolution: 144dpi) and (max-width: 771px), (min-resolution: 1.5dppx) and (max-width: 771px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-tablet@2x.jpg");
   }
 }
 
@@ -902,6 +926,11 @@ body {
     margin-bottom: 15px;
   }
 
+  .hero-block {
+    min-height: 577px;
+    padding: 167px 25px 50px;
+  }
+
   .hero-block__title {
     font-size: 36px;
     line-height: 42px;
@@ -909,13 +938,35 @@ body {
 
   .hero-block__description {
     font-size: 14px;
-    line-height: 27px;
-    margin-top: 5px;
+    line-height: 22px;
+    margin-top: 8px;
+    margin-bottom: 45px;
   }
 
   .hero-block__button {
     margin-left: 0;
+    min-height: 40px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .hero-block__button-mobile-text {
+    display: block;
+  }
+
+  .hero-block__button-desktop-tablet-text {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-mobile.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 320px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 320px), (min-resolution: 144dpi) and (max-width: 320px), (min-resolution: 1.5dppx) and (max-width: 320px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-mobile@2x.jpg");
   }
 }

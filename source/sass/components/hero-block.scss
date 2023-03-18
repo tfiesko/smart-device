@@ -1,4 +1,5 @@
 .hero-block {
+
   min-height: 880px;
   padding: 50px;
   padding-top: 305px;
@@ -6,10 +7,39 @@
   color: $color-white-text;
 
   background-color: #535B63;
+  background-image: url("../img/main-block-background-desktop.jpg");
+  background-size: cover;
 
   @include vp-1100 {
     min-height: 650px;
     padding-top: 190px;
+  }
+
+  @include vp-771 {
+    background-image: url("../img/main-block-background-tablet.jpg");
+  }
+
+  @include vp-769 {
+    min-height: 577px;
+    padding: 167px 25px 50px;
+  }
+
+  @include vp-320 {
+    background-image: url("../img/main-block-background-mobile.jpg");
+  }
+
+  @include retina {
+    @media(min-width: 772px){
+      background-image: url("../img/main-block-background-desktop@2x.jpg");
+    }
+
+    @include vp-771 {
+      background-image: url("../img/main-block-background-tablet@2x.jpg");
+    }
+
+    @include vp-320 {
+      background-image: url("../img/main-block-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -63,8 +93,9 @@
 
   @include vp-769 {
     font-size: 14px;
-    line-height: 27px;
-    margin-top: 5px;
+    line-height: 22px;
+    margin-top: 8px;
+    margin-bottom: 45px;
   }
 }
 
@@ -86,8 +117,23 @@
 
   @include vp-769 {
     margin-left: 0;
+    min-height: 40px;
 
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+.hero-block__button-mobile-text {
+  display: none;
+
+  @include vp-769 {
+    display: block;
+  }
+}
+
+.hero-block__button-desktop-tablet-text {
+  @include vp-769 {
+    display: none;
   }
 }
