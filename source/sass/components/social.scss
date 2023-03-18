@@ -10,13 +10,9 @@
 
   list-style: none;
 
-  @include vp-770 {
+  @include vp-769 {
     margin-left: 0;
   }
-}
-
-.social__item {
-
 }
 
 .social__item-link {

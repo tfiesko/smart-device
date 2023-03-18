@@ -10,7 +10,7 @@
 
   }
 
-  @include vp-770 {
+  @include vp-769 {
     padding: 20px 0 35px;
   }
 }
@@ -27,7 +27,7 @@
     padding-right: 10px;
   }
 
-  @include vp-770 {
+  @include vp-769 {
     flex-direction: column;
     flex-wrap: nowrap;
     padding-right: 0;
@@ -47,7 +47,7 @@
     column-gap: 141px;
   }
 
-  @include vp-770 {
+  @include vp-769 {
     width: 100%;
     grid-template-columns: auto;
   }
@@ -64,7 +64,7 @@
     margin-right: 0;
   }
 
-  @include vp-770{
+  @include vp-769 {
     display: flex;
     flex-direction: column;
     align-items: center;

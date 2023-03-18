@@ -6,28 +6,72 @@
   color: $color-white-text;
 
   background-color: #535B63;
+
+  @include vp-1100 {
+    min-height: 650px;
+    padding-top: 190px;
+  }
 }
 
 .hero-block__wrapper {
-  width: 720px;
-  margin-left: 425px;
+  max-width: 1220px;
+  padding-left: 125px;
+  margin: 0 auto;
+
+  @include vp-1100 {
+    padding-left: 0;
+  }
 }
 
 .hero-block__title {
+  margin: 0 0 32px;
+
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  @include vp-1100 {
+    margin-bottom: 20px;
+
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @include vp-769 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @include vp-1100 {
+    margin-bottom: 0;
+  }
 }
 
 .hero-block__description {
-  width: 680px;
+  max-width: 680px;
+  margin-bottom: 45px;
 
   font-size: 22px;
   line-height: 34px;
+
+  @include vp-1100 {
+    margin-top: 1px;
+    margin-bottom: 55px;
+  }
+
+  @include vp-769 {
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 5px;
+  }
 }
 
 .hero-block__button {
-  width: 410px;
+  display: block;
+  width: 100%;
+  max-width: 410px;
   min-height: 55px;
 
   font-size: 18px;
@@ -35,4 +79,15 @@
 
   background-color: $color-aqua-blue;
   border-radius: 3px;
+
+  @include vp-1100 {
+    margin-left: 45px;
+  }
+
+  @include vp-769 {
+    margin-left: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

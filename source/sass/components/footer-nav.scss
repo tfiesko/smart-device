@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @include vp-770 {
+  @include vp-769 {
     display: grid;
 
   }
@@ -17,7 +17,7 @@
     flex-wrap: nowrap;
   }
 
-  @include vp-770 {
+  @include vp-769 {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -40,7 +40,7 @@
     margin-right: 0;
   }
 
-  @include vp-770 {
+  @include vp-769 {
     max-width: 100%;
   }
 }
@@ -52,7 +52,7 @@
 .footer-nav__link {
   color: inherit;
 
-  @include vp-770 {
+  @include vp-769 {
     display: block;
     width: 100%;
     padding-bottom: 10px;
@@ -70,8 +70,4 @@
   line-height: 16px;
 
   text-transform: uppercase;
-
-  @include vp-770 {
-
-  }
 }

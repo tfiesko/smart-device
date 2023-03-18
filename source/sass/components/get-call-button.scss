@@ -6,7 +6,7 @@
   border: 1px solid $color-white-text;
   border-radius: 3px;
 
-  @include vp-770 {
+  @include vp-1100 {
     display: none;
   }
 }
