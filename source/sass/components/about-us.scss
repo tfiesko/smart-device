@@ -1,0 +1,123 @@
+.about-us {
+  @include vp-1100 {
+    padding-left: 40px;
+  }
+
+  @include vp-769 {
+    padding: 0 25px;
+  }
+}
+
+.about-us__container {
+  position: relative;
+
+  max-width: 1220px;
+  min-height: 320px;
+  padding-left: 180px;
+  margin: 40px auto 100px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 320px;
+
+    background-image: url("../img/2022.png");
+    background-repeat: no-repeat;
+  }
+
+  @include vp-1100 {
+    padding-right: 55px;
+    margin: 0px auto 80px;
+  }
+
+  @include vp-769 {
+    padding: 0;
+    margin-bottom: 70px;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.about-us__content-and-button {
+  max-width: 970px;
+  margin-left: auto;
+}
+
+.about-us__content {
+  max-height: 230px;
+  margin-bottom: 24px;
+
+  overflow-y: hidden;
+
+  @include vp-1100 {
+    max-height: 312px;
+  }
+
+  @include vp-769 {
+
+    max-height: 260px;
+    margin-bottom: 14px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 15px;
+
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 21px 0;
+
+    font-size: 16px;
+    line-height: 21.5px;
+
+    &:first-of-type {
+
+    }
+  }
+
+  h2 + p {
+    margin-top: 15px;
+  }
+}
+
+[data-is-full-size = 'full-size'] {
+  min-height: 400px;
+  max-height: fit-content;
+}
+
+.about-us__button {
+  width: 180px;
+  min-height: 45px;
+
+  color: $color-aqua-blue;
+  border: 1px solid $color-aqua-blue;
+
+  @include vp-769 {
+    width: 160px;
+    min-height: 35px;
+  }
+}

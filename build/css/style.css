@@ -651,6 +651,73 @@ body {
   height: 35px;
 }
 
+.about-us__container {
+  position: relative;
+  max-width: 1220px;
+  min-height: 320px;
+  padding-left: 180px;
+  margin: 40px auto 100px;
+}
+
+.about-us__container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 320px;
+  background-image: url("../img/2022.png");
+  background-repeat: no-repeat;
+}
+
+.about-us__content-and-button {
+  max-width: 970px;
+  margin-left: auto;
+}
+
+.about-us__content {
+  max-height: 230px;
+  margin-bottom: 24px;
+  overflow-y: hidden;
+}
+
+.about-us__content h2 {
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.about-us__content h2:first-of-type {
+  margin-top: 0;
+}
+
+.about-us__content p {
+  margin: 21px 0;
+  font-size: 16px;
+  line-height: 21.5px;
+}
+
+.about-us__content h2 + p {
+  margin-top: 15px;
+}
+
+[data-is-full-size=full-size] {
+  min-height: 400px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.about-us__button {
+  width: 180px;
+  min-height: 45px;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -814,6 +881,19 @@ body {
 
   .advantages__card h3 {
     margin: 9px auto;
+  }
+
+  .about-us {
+    padding-left: 40px;
+  }
+
+  .about-us__container {
+    padding-right: 55px;
+    margin: 0px auto 80px;
+  }
+
+  .about-us__content {
+    max-height: 312px;
   }
 }
 
@@ -1052,6 +1132,39 @@ body {
   .advantages__card svg {
     width: 30px;
     height: 30px;
+  }
+
+  .about-us {
+    padding: 0 25px;
+  }
+
+  .about-us__container {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  .about-us__container::before {
+    content: none;
+  }
+
+  .about-us__content {
+    max-height: 260px;
+    margin-bottom: 14px;
+  }
+
+  .about-us__content h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-us__content p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about-us__button {
+    width: 160px;
+    min-height: 35px;
   }
 }
 
