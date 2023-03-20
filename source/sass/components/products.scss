@@ -1,0 +1,168 @@
+.products {
+  padding: 50px;
+  padding-bottom: 100px;
+
+  font-family: "Roboto Condensed";
+  color: $color-default-white;
+
+  background-color: $color-dark-blue;
+
+  @include vp-1100 {
+    padding-top: 40px;
+  }
+
+  @include vp-769 {
+    padding: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.products__wrapper {
+  min-height: 250px;
+  max-width: 1220px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+
+.products__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(250px, 1fr);
+  column-gap: 85px;
+  row-gap: 50px;
+
+  @include vp-1100 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.products__card {
+  position: relative;
+
+  max-height: 650px;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-aqua-blue;
+    border-radius: 3px 0px 0px 0px;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    content: "";
+
+    display: block;
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid $color-default-white;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 1px;
+
+    transform: rotate(45deg);
+  }
+
+  @include vp-1100 {
+    height: 250px;
+  }
+
+  @include vp-769 {
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      bottom: 17px;
+      right: 17px;
+
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+
+.products__card img {
+  object-fit: contain;
+
+  @include vp-1100 {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.products__title {
+  margin-top: 16px;
+  margin-bottom: 54px;
+
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+
+  @include vp-1100 {
+    margin-bottom: 40px;
+  }
+
+  @include vp-769 {
+    margin-bottom: 30px;
+
+    font-size: 29px;
+    line-height: 39px;
+  }
+}
+
+.products__title-desktop-tablet-content {
+  @include vp-769 {
+    display: none;
+  }
+}
+
+.products__title-mobile-content {
+  display: none;
+
+  @include vp-769 {
+    display: block;
+  }
+}
+
+.products__card-description {
+  position: absolute;
+  top: 48px;
+  left: 40px;
+
+  width: 185px;
+
+  color: $color-default-white;
+  font-size: 20px;
+  line-height: 30px;
+
+  @include vp-1100 {
+    top: 36px;
+    left: 45px;
+
+  }
+
+  @include vp-769 {
+    top: 26px;
+    left: 30px;
+
+    font-size: 18px;
+  }
+}
