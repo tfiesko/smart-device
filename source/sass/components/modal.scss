@@ -25,11 +25,10 @@
       background-color: rgba(3, 16, 27, 0.7);
     }
 
-    @include vp-1100 {
+    @include vp-1023 {
       display: none;
     }
   }
-
 }
 
 .modal__close-btn {
@@ -42,6 +41,14 @@
 
   background-color: transparent;
   border: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before,
   &::after {
@@ -94,7 +101,7 @@
   margin-top: 0;
   margin-bottom: 15px;
 
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;

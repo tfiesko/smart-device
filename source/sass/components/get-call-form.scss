@@ -1,8 +1,4 @@
-.get-call-form {
-
-}
-
-.get-call-form input:not([type = "checkbox"], [type = "radio"]),
+.get-call-form input:not([type="checkbox"], [type="radio"]),
 .get-call-form textarea {
   width: 100%;
 
@@ -32,17 +28,17 @@
   padding: 20px 15px 25px;
   margin-bottom: 6px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     padding-top: 30px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     height: 180px;
     padding-top: 22px;
   }
 }
 
-.get-call-form input:not([type = "checkbox"], [type = "radio"]) {
+.get-call-form input:not([type="checkbox"], [type="radio"]) {
   min-height: 50px;
   padding: 15px;
 }

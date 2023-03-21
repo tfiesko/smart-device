@@ -18,20 +18,14 @@
   }
 }
 
-@mixin vp-1100 {
-  @media (max-width: $vp-1100) {
+@mixin vp-1023 {
+  @media (max-width: $vp-1023) {
     @content;
   }
 }
 
-@mixin vp-771 {
-  @media (max-width: ($vp-770 + 1)) {
-    @content;
-  }
-}
-
-@mixin vp-769 {
-  @media (max-width: ($vp-770 - 1)) {
+@mixin vp-768 {
+  @media (max-width: ($vp-768 - 1)) {
     @content;
   }
 }
@@ -40,12 +34,6 @@
   @media (max-width: $vp-320) {
     @content;
   }
-}
-
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-  content: $content;
-  display: $display;
-  position: $pos;
 }
 // ---------------------------------
 

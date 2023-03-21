@@ -2,17 +2,17 @@
   padding: 50px;
   padding-bottom: 92px;
 
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   color: $color-default-white;
 
   background-color: $color-dark-blue;
 
-  @include vp-1100 {
+  @include vp-1023 {
     padding-top: 40px;
     padding-bottom: 27px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     padding: 30px;
     padding-left: 25px;
     padding-right: 25px;
@@ -25,7 +25,7 @@
   padding-bottom: 50px;
   margin: 0 auto;
 
-  @include vp-769 {
+  @include vp-768 {
     margin-bottom: 8px;
   }
 }
@@ -38,7 +38,7 @@
   column-gap: 85px;
   row-gap: 50px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
@@ -74,7 +74,7 @@
     height: 60px;
 
     background-color: $color-aqua-blue;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
   }
 
   &::after {
@@ -95,12 +95,11 @@
     transform: rotate(45deg);
   }
 
-  @include vp-1100 {
+  @include vp-1023 {
     height: 250px;
   }
 
-  @include vp-769 {
-
+  @include vp-768 {
     &::before {
       width: 40px;
       height: 40px;
@@ -119,7 +118,7 @@
 .products__card img {
   object-fit: contain;
 
-  @include vp-1100 {
+  @include vp-1023 {
     height: 100%;
     width: 100%;
 
@@ -135,11 +134,11 @@
   line-height: 50px;
   font-weight: 400;
 
-  @include vp-1100 {
+  @include vp-1023 {
     margin-bottom: 40px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     margin-bottom: 30px;
 
     font-size: 29px;
@@ -148,7 +147,7 @@
 }
 
 .products__title-desktop-tablet-content {
-  @include vp-769 {
+  @include vp-768 {
     display: none;
   }
 }
@@ -156,7 +155,7 @@
 .products__title-mobile-content {
   display: none;
 
-  @include vp-769 {
+  @include vp-768 {
     display: block;
   }
 }
@@ -172,13 +171,12 @@
   font-size: 20px;
   line-height: 30px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     top: 36px;
     left: 45px;
-
   }
 
-  @include vp-769 {
+  @include vp-768 {
     top: 26px;
     left: 30px;
 

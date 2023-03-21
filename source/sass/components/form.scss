@@ -3,7 +3,7 @@
 
   color: $color-default-white;
 
-  @include vp-1100 {
+  @include vp-1023 {
     max-width: 670px;
   }
 }
@@ -11,16 +11,16 @@
 .form__title {
   margin-bottom: 14px;
 
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
 
-  @include vp-1100 {
+  @include vp-1023 {
     margin-bottom: 10px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     font-size: 30px;
     line-height: 42px;
   }
@@ -30,11 +30,11 @@
   margin-top: 10px;
   margin-bottom: 35px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     margin-bottom: 23px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     margin-bottom: 30px;
 
     font-size: 14px;
@@ -56,7 +56,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 
-  @include vp-769 {
+  @include vp-768 {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
@@ -72,7 +72,7 @@
   background-color: $color-dark-blue;
   border-radius: 3px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     max-width: 265px;
   }
 }

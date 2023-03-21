@@ -57,4 +57,3 @@ document.querySelector('[data-get-call]').onclick = () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-

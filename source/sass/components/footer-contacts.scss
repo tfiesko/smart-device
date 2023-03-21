@@ -1,7 +1,7 @@
 .footer-contacts {
   max-width: 308px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     max-width: 100%;
   }
 }
@@ -24,7 +24,7 @@
   list-style: none;
   font-style: normal;
 
-  @include vp-769 {
+  @include vp-768 {
     padding-left: 25px;
   }
 }
@@ -39,7 +39,7 @@
 
   font-style: normal;
 
-  @include vp-769 {
+  @include vp-768 {
     padding-left: 25px;
     margin-bottom: 15px;
   }

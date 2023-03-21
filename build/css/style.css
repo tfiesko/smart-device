@@ -23,6 +23,14 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
+  font-family: "Rouble";
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
   src: url("../fonts/PTMono-Regular.woff2") format("woff2");
@@ -278,7 +286,7 @@ html {
 .button {
   display: block;
   padding: 10px 15px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -289,15 +297,14 @@ html {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .button:disabled {
   opacity: 0.2;
-}
-
-.container {
-  max-width: 1160px;
-  margin: 0 auto;
 }
 
 .get-call-button {
@@ -615,17 +622,34 @@ html {
 }
 
 .hero-block {
+  position: relative;
   min-height: 880px;
   padding: 50px;
   padding-top: 305px;
   margin-bottom: 70px;
   color: #f2f5f6;
-  background-color: #535B63;
+  background-color: #535b63;
   background-image: url("../img/main-block-background-desktop.jpg");
   background-size: cover;
 }
 
+.hero-block::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
 .hero-block__wrapper {
+  position: relative;
+  z-index: 2;
   max-width: 1220px;
   padding-left: 125px;
   margin: 0 auto;
@@ -712,7 +736,7 @@ html {
 
 .advantages__card h3 {
   margin: 15px auto;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
@@ -756,7 +780,7 @@ html {
 
 .about-us__content h2 {
   margin-bottom: 15px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 50px;
@@ -802,7 +826,7 @@ html {
 .products {
   padding: 50px;
   padding-bottom: 92px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   color: #ffffff;
   background-color: #041827;
 }
@@ -853,7 +877,7 @@ html {
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
 .products__card::after {
@@ -946,7 +970,7 @@ html {
 
 .form__title {
   margin-bottom: 14px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -1009,7 +1033,7 @@ input:disabled {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin: 13px 10px 0px 12px;
+  margin: 13px 10px 0 12px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1164,6 +1188,14 @@ input:disabled {
   border: none;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.5;
+}
+
+.modal__close-btn:active {
+  opacity: 0.3;
+}
+
 .modal__close-btn::before,
 .modal__close-btn::after {
   position: absolute;
@@ -1211,7 +1243,7 @@ input:disabled {
 .modal__title {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
@@ -1258,13 +1290,13 @@ input:disabled {
   }
 */
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 772px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 772px), (min-resolution: 144dpi) and (min-width: 772px), (min-resolution: 1.5dppx) and (min-width: 772px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .hero-block {
     background-image: url("../img/main-block-background-desktop@2x.jpg");
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1023px) {
   .get-call-button {
     display: none;
   }
@@ -1388,7 +1420,7 @@ input:disabled {
 
   .about-us__container {
     padding-right: 55px;
-    margin: 0px auto 80px;
+    margin: 0 auto 80px;
   }
 
   .about-us__content {
@@ -1460,7 +1492,7 @@ input:disabled {
   }
 
   .control input {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .get-call-form textarea {
@@ -1472,19 +1504,7 @@ input:disabled {
   }
 }
 
-@media (max-width: 771px) {
-  .hero-block {
-    background-image: url("../img/main-block-background-tablet.jpg");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 771px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 771px), (min-resolution: 144dpi) and (max-width: 771px), (min-resolution: 1.5dppx) and (max-width: 771px) {
-  .hero-block {
-    background-image: url("../img/main-block-background-tablet@2x.jpg");
-  }
-}
-
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .accordion {
     margin: 0 auto 0 auto;
   }
@@ -1496,11 +1516,11 @@ input:disabled {
 
   .accordion__element:last-child {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(248, 253, 255, 0.698);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.6);
   }
 
   .accordion__element {
-    border-top: 1px solid rgba(248, 253, 255, 0.698);
+    border-top: 1px solid rgba(248, 253, 255, 0.6);
     position: relative;
   }
 
@@ -1555,6 +1575,10 @@ input:disabled {
     border: none;
     color: #ffffff;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .accordion__button:hover {
@@ -1568,7 +1592,9 @@ input:disabled {
   .accordion__wrapper {
     padding: 10px;
   }
+}
 
+@media (max-width: 767px) {
   .header-contacts {
     padding-bottom: 5px;
   }
@@ -1666,6 +1692,10 @@ input:disabled {
   .footer-contacts__address {
     padding-left: 25px;
     margin-bottom: 15px;
+  }
+
+  .hero-block {
+    background-image: url("../img/main-block-background-tablet.jpg");
   }
 
   .hero-block {
@@ -1838,6 +1868,12 @@ input:disabled {
   .get-call-form textarea {
     height: 180px;
     padding-top: 22px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-tablet@2x.jpg");
   }
 }
 

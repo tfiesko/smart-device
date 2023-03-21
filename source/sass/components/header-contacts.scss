@@ -8,13 +8,13 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  @include vp-1100 {
+  @include vp-1023 {
     max-width: 100px;
     padding: 0;
     padding-bottom: 15px;
   }
 
-  @include vp-769 {
+  @include vp-768 {
     padding-bottom: 5px;
   }
 }
@@ -32,6 +32,7 @@
 
   &:hover {
     color: $color-deep-blue;
+
     &::before {
       opacity: 0.4;
     }
@@ -53,6 +54,7 @@
       height: 20px;
     }
   }
+
   &--mail::before {
     background-image: url("../img/svg/email-icon.svg");
   }
@@ -61,7 +63,7 @@
     background-image: url("../img/svg/phone-call-icon.svg");
   }
 
-  @include vp-1100 {
+  @include vp-1023 {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -80,7 +82,7 @@
 }
 
 .header-contacts__item-text {
-  @include vp-1100 {
+  @include vp-1023 {
     display: none;
   }
 }

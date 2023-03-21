@@ -6,7 +6,7 @@
   background-size: 50%;
   background-repeat: no-repeat;
 
-  @include vp-1100 {
+  @include vp-1023 {
     background-image: none;
   }
 }
@@ -39,15 +39,16 @@
     }
   }
 
-  @include vp-1100 {
+  @include vp-1023 {
     padding-top: 15px;
     padding-bottom: 125px;
+
     &::before {
       content: none;
     }
   }
 
-  @include vp-769 {
+  @include vp-768 {
     padding: 20px 25px 85px;
   }
 }
@@ -58,7 +59,7 @@
 
   margin-left: auto;
 
-  @include vp-1100 {
+  @include vp-1023 {
     margin: auto;
   }
 }
