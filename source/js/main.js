@@ -27,6 +27,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Скрол страницы по клику
+
+document.querySelector('[data-get-call]').onclick = () => {
+  window.scrollTo(0, 2900);
+};
 
 // ---------------------------------
 

@@ -271,6 +271,10 @@ body {
   line-height: 21.5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   display: block;
   padding: 10px 15px;
