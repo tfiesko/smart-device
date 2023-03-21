@@ -291,6 +291,10 @@ html {
   cursor: pointer;
 }
 
+.button:disabled {
+  opacity: 0.2;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -302,6 +306,15 @@ html {
   margin: 10px;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
+}
+
+.get-call-button:hover {
+  color: #375ea8;
+  border-color: #375ea8;
+}
+
+.get-call-button:active {
+  opacity: 0.5;
 }
 
 .header-contacts {
@@ -331,12 +344,24 @@ html {
   text-decoration: none;
 }
 
+.header-contacts__item:hover {
+  color: #375ea8;
+}
+
+.header-contacts__item:hover::before {
+  opacity: 0.4;
+}
+
+.header-contacts__item:active {
+  opacity: 0.5;
+}
+
 .header-contacts__item--mail::before,
 .header-contacts__item--tel::before {
   content: "";
-  display: block;
   position: absolute;
   left: 15px;
+  display: block;
   width: 20px;
   height: 20px;
 }
@@ -352,6 +377,14 @@ html {
 .logo {
   width: 215px;
   height: 55px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
 }
 
 .main-header {
@@ -460,9 +493,18 @@ html {
   height: 40px;
 }
 
-.social__icon {
+.social__item-link svg {
   width: 40px;
   height: 40px;
+  fill: #f2f5f6;
+}
+
+.social__item-link svg:hover {
+  fill: #375ea8;
+}
+
+.social__item-link svg:active {
+  fill: #4d76c5;
 }
 
 .footer-nav {
@@ -504,6 +546,15 @@ html {
   color: inherit;
 }
 
+.footer-nav__link:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.footer-nav__link:active {
+  opacity: 0.4;
+}
+
 .footer-nav__title {
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "arial", sans-serif;
@@ -520,9 +571,17 @@ html {
   margin-bottom: 30px;
 }
 
-.footer-logo__img {
+.footer-logo img {
   width: 215px;
   height: 55px;
+}
+
+.footer-logo img:hover {
+  opacity: 0.8;
+}
+
+.footer-logo img:active {
+  opacity: 0.6;
 }
 
 .footer-contacts {
@@ -597,6 +656,14 @@ html {
   line-height: 21px;
   background-color: #00b2ff;
   border-radius: 3px;
+}
+
+.hero-block__button:hover {
+  background-color: #008ecc;
+}
+
+.hero-block__button:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-block__button-mobile-text {
@@ -721,6 +788,15 @@ html {
   min-height: 45px;
   color: #00b2ff;
   border: 1px solid #00b2ff;
+  border-radius: 3px;
+}
+
+.about-us__button:hover {
+  color: #008ecc;
+}
+
+.about-us__button:active {
+  opacity: 0.5;
 }
 
 .products {
@@ -754,6 +830,18 @@ html {
 .products__card {
   position: relative;
   max-height: 650px;
+}
+
+.products__card:hover {
+  opacity: 0.8;
+}
+
+.products__card:hover::before {
+  background-color: #008ecc;
+}
+
+.products__card:active::before {
+  background-color: #33c1ff;
 }
 
 .products__card::before {
@@ -908,6 +996,14 @@ html {
   line-height: 16px;
 }
 
+.control:hover {
+  color: #375ea8;
+}
+
+input:disabled {
+  opacity: 0.6;
+}
+
 .control input {
   position: relative;
   -ms-flex-item-align: center;
@@ -917,6 +1013,11 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.control input:hover::before,
+.control input:hover::after {
+  border-color: #375ea8;
 }
 
 .control input::before {
@@ -992,6 +1093,16 @@ html {
   color: #f2f5f6;
 }
 
+.get-call-form input:not([type=checkbox], [type=radio]):hover,
+.get-call-form textarea:hover {
+  opacity: 0.8;
+}
+
+.get-call-form input:not([type=checkbox], [type=radio]):active,
+.get-call-form textarea:active {
+  opacity: 0.6;
+}
+
 .get-call-form textarea {
   width: 100%;
   height: 155px;
@@ -1002,6 +1113,14 @@ html {
 .get-call-form input:not([type=checkbox], [type=radio]) {
   min-height: 50px;
   padding: 15px;
+}
+
+.get-call-form__button:hover {
+  background-color: #375ea8;
+}
+
+.get-call-form__button:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .modal {
@@ -1438,6 +1557,14 @@ html {
     cursor: pointer;
   }
 
+  .accordion__button:hover {
+    background-color: #375ea8;
+  }
+
+  .accordion__button:active {
+    background-color: #4d76c5;
+  }
+
   .accordion__wrapper {
     padding: 10px;
   }
@@ -1519,6 +1646,17 @@ html {
     width: 100%;
     padding-bottom: 10px;
     margin-bottom: 0;
+  }
+
+  .footer-nav__link:hover {
+    background-color: #375ea8;
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  .footer-nav__link:active {
+    background-color: #375ea8;
+    opacity: 0.5;
   }
 
   .footer-contacts__phone-list {

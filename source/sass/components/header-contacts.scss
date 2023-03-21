@@ -30,13 +30,25 @@
 
   text-decoration: none;
 
+  &:hover {
+    color: $color-deep-blue;
+    &::before {
+      opacity: 0.4;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   &--mail,
   &--tel {
     &::before {
-      @include pseudo;
+      content: "";
+      position: absolute;
       left: 15px;
 
+      display: block;
       width: 20px;
       height: 20px;
     }

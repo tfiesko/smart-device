@@ -113,6 +113,14 @@
   background-color: $color-aqua-blue;
   border-radius: 3px;
 
+  &:hover {
+    background-color: darken($color-aqua-blue, 10%);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   @include vp-1100 {
     margin-left: 45px;
   }

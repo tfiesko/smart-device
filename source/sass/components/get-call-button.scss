@@ -6,6 +6,15 @@
   border: 1px solid $color-white-text;
   border-radius: 3px;
 
+  &:hover {
+    color: $color-deep-blue;
+    border-color: $color-deep-blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @include vp-1100 {
     display: none;
   }

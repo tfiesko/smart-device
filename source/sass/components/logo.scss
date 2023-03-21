@@ -2,6 +2,14 @@
   width: 215px;
   height: 55px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @include vp-769 {
     width: 35px;
     height: 35px;

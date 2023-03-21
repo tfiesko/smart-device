@@ -16,6 +16,14 @@
   &::placeholder {
     color: $color-white-text;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .get-call-form textarea {
@@ -37,4 +45,14 @@
 .get-call-form input:not([type = "checkbox"], [type = "radio"]) {
   min-height: 50px;
   padding: 15px;
+}
+
+.get-call-form__button {
+  &:hover {
+    background-color: $color-deep-blue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

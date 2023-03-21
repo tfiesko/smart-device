@@ -49,6 +49,20 @@
 
   max-height: 650px;
 
+  &:hover {
+    opacity: 0.8;
+
+    &::before {
+      background-color: darken($color-aqua-blue, 10%);
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: lighten($color-aqua-blue, 10%);
+    }
+  }
+
   &::before {
     position: absolute;
     bottom: 0;

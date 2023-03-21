@@ -9,7 +9,15 @@
   }
 }
 
-.footer-logo__img {
+.footer-logo img {
   width: 215px;
   height: 55px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

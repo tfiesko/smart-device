@@ -23,7 +23,17 @@
   height: 40px;
 }
 
-.social__icon {
+.social__item-link svg {
   width: 40px;
   height: 40px;
+
+  fill: $color-white-text;
+
+  &:hover {
+    fill: $color-deep-blue;
+  }
+
+  &:active {
+    fill: lighten($color-deep-blue, 10%);
+  }
 }

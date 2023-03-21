@@ -4,6 +4,14 @@
 
   font-size: 14px;
   line-height: 16px;
+
+  &:hover {
+    color: $color-deep-blue;
+  }
+}
+
+input:disabled {
+  opacity: 0.6;
 }
 
 .control input {
@@ -12,6 +20,13 @@
   align-self: center;
   margin: 13px 10px 0px 12px;
   appearance: none;
+
+  &:hover {
+    &::before,
+    &::after {
+      border-color: $color-deep-blue;
+    }
+  }
 
   &::before {
     display: block;

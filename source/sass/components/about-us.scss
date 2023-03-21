@@ -115,6 +115,15 @@
 
   color: $color-aqua-blue;
   border: 1px solid $color-aqua-blue;
+  border-radius: 3px;
+
+  &:hover {
+    color: darken($color-aqua-blue, 10%);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @include vp-769 {
     width: 160px;
