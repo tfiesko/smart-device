@@ -33,6 +33,7 @@ const initModals = () => {
       el.classList.remove('modal--preload');
     }, 100);
   });
+
   modals = new Modals(settings);
   // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
   window.modals = modals;
