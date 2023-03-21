@@ -1,6 +1,6 @@
 .products {
   padding: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 92px;
 
   font-family: "Roboto Condensed";
   color: $color-default-white;
@@ -9,6 +9,7 @@
 
   @include vp-1100 {
     padding-top: 40px;
+    padding-bottom: 27px;
   }
 
   @include vp-769 {
@@ -23,6 +24,10 @@
   max-width: 1220px;
   padding-bottom: 50px;
   margin: 0 auto;
+
+  @include vp-769 {
+    margin-bottom: 8px;
+  }
 }
 
 

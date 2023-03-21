@@ -1,0 +1,64 @@
+.feedback {
+  min-height: 500px;
+
+  background-color: $color-aqua-blue;
+  background-image: linear-gradient(to bottom right, $color-lite-dark-blue 50%, $color-aqua-blue 50%);
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  @include vp-1100 {
+    background-image: none;
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+
+  max-width: 1300px;
+  padding: 136px 50px 250px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    left: 42px;
+    top: 46%;
+    content: "";
+
+    display: block;
+    width: 510px;
+    height: 285px;
+
+    background-image: url("../img/paper-airplane.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: translateY(-50%);
+
+    @include retina {
+      background-image: url("../img/paper-airplane@2x.png");
+    }
+  }
+
+  @include vp-1100 {
+    padding-top: 15px;
+    padding-bottom: 125px;
+    &::before {
+      content: none;
+    }
+  }
+
+  @include vp-769 {
+    padding: 20px 25px 85px;
+  }
+}
+
+.feedback__form {
+  position: relative;
+  z-index: 1;
+
+  margin-left: auto;
+
+  @include vp-1100 {
+    margin: auto;
+  }
+}
