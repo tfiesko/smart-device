@@ -399,7 +399,8 @@ html {
   z-index: 10;
   width: 100%;
   min-height: 80px;
-  padding: 20px 50px;
+  padding: 16px 50px 20px 35px;
+  padding-left: 35px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background-image: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -563,6 +564,7 @@ html {
 }
 
 .footer-nav__title {
+  margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-weight: 400;
@@ -596,6 +598,7 @@ html {
 }
 
 .footer-contacts__title {
+  margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-weight: 400;
@@ -774,7 +777,7 @@ html {
 
 .about-us__content {
   max-height: 230px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   overflow-y: hidden;
 }
 
@@ -825,7 +828,7 @@ html {
 
 .products {
   padding: 50px;
-  padding-bottom: 92px;
+  padding-bottom: 90px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   color: #ffffff;
   background-color: #041827;
@@ -927,7 +930,7 @@ html {
 }
 
 .feedback {
-  min-height: 500px;
+  min-height: 580px;
   background-color: #00b2ff;
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #026593), color-stop(50%, #00b2ff));
   background-image: -o-linear-gradient(top left, #026593 50%, #00b2ff 50%);
@@ -939,7 +942,7 @@ html {
 .feedback__wrapper {
   position: relative;
   max-width: 1300px;
-  padding: 136px 50px 250px;
+  padding: 135px 50px 250px;
   margin: 0 auto;
 }
 
@@ -1352,6 +1355,11 @@ input:disabled {
     display: none;
   }
 
+  .main-header {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
   .main-header__container {
     padding-right: 20px;
   }
@@ -1390,6 +1398,14 @@ input:disabled {
     margin-right: 0;
   }
 
+  .footer-nav__item {
+    margin-bottom: 9px;
+  }
+
+  .footer-nav__title {
+    margin-top: 15px;
+  }
+
   .footer-logo {
     margin-bottom: 10px;
   }
@@ -1398,9 +1414,13 @@ input:disabled {
     max-width: 100%;
   }
 
+  .footer-contacts__title {
+    margin-top: 15px;
+  }
+
   .hero-block {
-    min-height: 650px;
-    padding-top: 190px;
+    min-height: 655px;
+    padding-top: 195px;
     margin-bottom: 30px;
   }
 
@@ -1450,7 +1470,7 @@ input:disabled {
   }
 
   .about-us__content {
-    max-height: 312px;
+    max-height: 320px;
   }
 
   .products {

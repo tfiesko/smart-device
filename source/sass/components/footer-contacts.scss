@@ -7,6 +7,7 @@
 }
 
 .footer-contacts__title {
+  margin-top: 10px;
   margin-bottom: 20px;
 
   font-family: "Roboto Condensed", "arial", sans-serif;
@@ -15,6 +16,10 @@
   line-height: 16px;
 
   text-transform: uppercase;
+
+  @include vp-1023 {
+    margin-top: 15px;
+  }
 }
 
 .footer-contacts__phone-list {

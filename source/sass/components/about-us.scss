@@ -51,12 +51,12 @@
 
 .about-us__content {
   max-height: 230px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   overflow-y: hidden;
 
   @include vp-1023 {
-    max-height: 312px;
+    max-height: 320px;
   }
 
   @include vp-768 {

@@ -1,5 +1,5 @@
 .feedback {
-  min-height: 500px;
+  min-height: 580px;
 
   background-color: $color-aqua-blue;
   background-image: linear-gradient(to bottom right, $color-lite-dark-blue 50%, $color-aqua-blue 50%);
@@ -15,7 +15,7 @@
   position: relative;
 
   max-width: 1300px;
-  padding: 136px 50px 250px;
+  padding: 135px 50px 250px;
   margin: 0 auto;
 
   &::before {
