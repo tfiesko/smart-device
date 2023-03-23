@@ -36,8 +36,8 @@
     <main>
       <section class="hero-block">
         <div class="hero-block__wrapper">
-          <h1 class="hero-block__title">Печатные платы</h1>
-          <p class="hero-block__description">
+          <h1>Печатные платы</h1>
+          <p>
             производство и монтаж, поставка комплектующих, блоков и модулей.
           </p>
           <button class="hero-block__button button" type="button" data-get-call><span>Получить бесплатную консультацию</span><span>Бесплатная консультация</span></button>
@@ -147,8 +147,10 @@
             Мы проконсультируем Вас бесплатно
           </p>
           <fieldset class="form__user-name form__row">
-            <label class="visually-hidden" for="user-name">Имя</label>
-            <input type="text" name="user-name" id="user-name" required placeholder="Имя">
+            <div>
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input type="text" name="user-name" id="user-name" required placeholder="Имя">
+            </div>
             <div data-validate-type="phone" data-on-input-validate data-required>
               <label class="visually-hidden" for="user-tel">Телефон</label>
               <input type="tel" name="user-tel" id="user-tel" required placeholder="Телефон">
@@ -158,10 +160,10 @@
             <textarea name="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
           </fieldset>
           <div class="form__send-question form__row">
-            <label class="form__checkbox control">
+            <div class="form__checkbox control">
               <input type="checkbox" name="agreement" required id="agreement" checked>
-              <span>Я согласен на обработку  персональных данных</span>
-            </label>
+              <label for="agreement">Я согласен на обработку  персональных данных</label>
+            </div>
             <button class="form__button get-call-form__button button" type="submit">Задать вопрос</button>
           </div>
         </form>
@@ -256,17 +258,19 @@
           <h2 class="modal__title">Закажите звонок</h2>
           <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form class="modal__form get-call-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="modal-name">Имя</label>
-            <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus>
+            <div>
+              <label class="visually-hidden" for="modal-name">Имя</label>
+              <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus>
+            </div>
             <div data-on-input-validate data-validate-type="phone" data-required>
               <label class="visually-hidden" for="modal-tel">Телефон</label>
               <input type="tel" required id="modal-tel" name="name" placeholder="Телефон">
             </div>
             <textarea name="user-question" id="modal-question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-            <label class="modal__checkbox control">
+            <div class="modal__checkbox control">
               <input type="checkbox" name="agreement" required id="agreement-modal" checked>
-              <span>Я согласен на обработку  персональных данных</span>
-            </label>
+              <label for="agreement-modal">Я согласен на обработку  персональных данных</label>
+            </div>
             <button class="modal__form-button get-call-form__button button" type="submit">Отправить</button>
           </form>
         </div>

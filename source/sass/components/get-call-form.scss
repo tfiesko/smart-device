@@ -41,6 +41,18 @@
 .get-call-form input:not([type="checkbox"], [type="radio"]) {
   min-height: 50px;
   padding: 15px;
+
+  &:focus[aria-invalid="true"] {
+    background-color: $color-error;
+  }
+
+  &:focus[aria-invalid="false"] {
+    background-color: $color-success;
+  }
+
+  &[aria-invalid="true"] {
+    outline: 1px solid $color-error;
+  }
 }
 
 .get-call-form__button {

@@ -655,7 +655,7 @@ html {
   margin: 0 auto;
 }
 
-.hero-block__title {
+.hero-block h1 {
   margin: 0 0 32px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 80px;
@@ -664,7 +664,7 @@ html {
   letter-spacing: 5px;
 }
 
-.hero-block__description {
+.hero-block p {
   max-width: 680px;
   margin-bottom: 45px;
   font-size: 22px;
@@ -1147,6 +1147,18 @@ input:disabled {
   padding: 15px;
 }
 
+.get-call-form input:not([type=checkbox], [type=radio]):focus[aria-invalid=true] {
+  background-color: #ff5100;
+}
+
+.get-call-form input:not([type=checkbox], [type=radio]):focus[aria-invalid=false] {
+  background-color: rgba(31, 161, 93, 0.8);
+}
+
+.get-call-form input:not([type=checkbox], [type=radio])[aria-invalid=true] {
+  outline: 1px solid #ff5100;
+}
+
 .get-call-form__button:hover {
   background-color: #375ea8;
 }
@@ -1396,17 +1408,17 @@ input:disabled {
     padding-left: 0;
   }
 
-  .hero-block__title {
+  .hero-block h1 {
     margin-bottom: 20px;
     font-size: 64px;
     line-height: 75px;
   }
 
-  .hero-block__title {
+  .hero-block h1 {
     margin-bottom: 0;
   }
 
-  .hero-block__description {
+  .hero-block p {
     margin-top: 1px;
     margin-bottom: 55px;
   }
@@ -1715,12 +1727,12 @@ input:disabled {
     padding: 167px 25px 50px;
   }
 
-  .hero-block__title {
+  .hero-block h1 {
     font-size: 36px;
     line-height: 42px;
   }
 
-  .hero-block__description {
+  .hero-block p {
     font-size: 14px;
     line-height: 22px;
     margin-top: 8px;
