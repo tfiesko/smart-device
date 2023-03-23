@@ -690,7 +690,7 @@ html {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero-block__button-mobile-text {
+.hero-block__button span:last-child {
   display: none;
 }
 
@@ -919,9 +919,11 @@ html {
   top: 48px;
   left: 40px;
   width: 185px;
+  margin: 0;
   color: #ffffff;
   font-size: 20px;
   line-height: 30px;
+  font-weight: 400;
 }
 
 .feedback {
@@ -1007,6 +1009,12 @@ html {
   line-height: 19px;
   background-color: #041827;
   border-radius: 3px;
+}
+
+.form__checkbox {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .control {
@@ -1247,6 +1255,12 @@ input:disabled {
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
+}
+
+.modal__checkbox {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 /* @mixin hover-focus {
@@ -1504,7 +1518,7 @@ input:disabled {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .accordion {
     margin: 0 auto 0 auto;
   }
@@ -1592,9 +1606,7 @@ input:disabled {
   .accordion__wrapper {
     padding: 10px;
   }
-}
 
-@media (max-width: 767px) {
   .header-contacts {
     padding-bottom: 5px;
   }
@@ -1722,11 +1734,11 @@ input:disabled {
     line-height: 16px;
   }
 
-  .hero-block__button-mobile-text {
+  .hero-block__button span:last-child {
     display: block;
   }
 
-  .hero-block__button-desktop-tablet-text {
+  .hero-block__button span:first-child {
     display: none;
   }
 

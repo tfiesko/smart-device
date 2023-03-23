@@ -166,10 +166,12 @@
   left: 40px;
 
   width: 185px;
+  margin: 0;
 
   color: $color-default-white;
   font-size: 20px;
   line-height: 30px;
+  font-weight: 400;
 
   @include vp-1023 {
     top: 36px;

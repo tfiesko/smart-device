@@ -152,7 +152,7 @@
   }
 }
 
-.hero-block__button-mobile-text {
+.hero-block__button span:last-child {
   display: none;
 
   @include vp-768 {
@@ -160,7 +160,7 @@
   }
 }
 
-.hero-block__button-desktop-tablet-text {
+.hero-block__button span:first-child {
   @include vp-768 {
     display: none;
   }
