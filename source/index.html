@@ -149,7 +149,7 @@
           <div class="feedback__form-wrapper form__wrapper">
             <div>
               <label class="visually-hidden" for="user-name">Имя</label>
-              <input type="text" name="user-name" id="user-name" required placeholder="Имя">
+              <input type="text" name="user-name" id="user-name" required placeholder="Имя" data-validate-type="text" data-limitation="name" data-required>
             </div>
             <div data-validate-type="phone" data-on-input-validate data-required>
               <label class="visually-hidden" for="user-tel">Телефон</label>
@@ -257,7 +257,7 @@
             <div class="form__wrapper">
               <div>
                 <label class="visually-hidden" for="modal-name">Имя</label>
-                <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus>
+                <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus data-validate-type="text" data-limitation="name" data-required>
               </div>
               <div data-on-input-validate data-validate-type="phone" data-required>
                 <label class="visually-hidden" for="modal-tel">Телефон</label>
