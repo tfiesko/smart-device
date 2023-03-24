@@ -15,7 +15,7 @@
   position: relative;
 
   max-width: 1300px;
-  padding: 135px 50px 250px;
+  padding: 135px 50px 255px;
   margin: 0 auto;
 
   &::before {
@@ -61,5 +61,66 @@
 
   @include vp-1023 {
     margin: auto;
+  }
+}
+
+.feedback__form h2 {
+  margin-bottom: 14px;
+
+  font-family: "Roboto Condensed", "arial", sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-768 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.feedback__form p {
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  @include vp-1023 {
+    margin-bottom: 23px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.feedback__form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+
+  @include vp-768 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feedback__form-wrapper textarea {
+  grid-column: span 2;
+
+  @include vp-768 {
+    grid-column: span 1;
+  }
+}
+
+
+.feedback__form-button {
+  max-width: 265px;
+
+  @include vp-768 {
+    max-width: 100%;
   }
 }

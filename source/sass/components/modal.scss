@@ -80,23 +80,6 @@
   background-color: $color-aqua-blue;
 }
 
-.modal__form {
-  display: grid;
-  width: 420px;
-  margin: 0 auto;
-  row-gap: 20px;
-}
-
-.modal__form-button {
-  min-height: 45px;
-
-  font-size: 16px;
-  line-height: 19px;
-
-  background-color: $color-dark-blue;
-  border-radius: 3px;
-}
-
 .modal__title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -107,6 +90,20 @@
   line-height: 42px;
 }
 
-.modal__checkbox {
-  order: 1;
+.modal__form p {
+  margin-top: 10px;
+  margin-bottom: 37px;
+
+  font-size: 16px;
+  line-height: 21.5px;
+}
+
+.modal__form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-family: "Roboto Condensed", "arial", sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 400;
 }

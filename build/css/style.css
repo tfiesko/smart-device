@@ -942,7 +942,7 @@ html {
 .feedback__wrapper {
   position: relative;
   max-width: 1300px;
-  padding: 135px 50px 250px;
+  padding: 135px 50px 255px;
   margin: 0 auto;
 }
 
@@ -968,12 +968,7 @@ html {
   margin-left: auto;
 }
 
-.form {
-  max-width: 580px;
-  color: #ffffff;
-}
-
-.form__title {
+.feedback__form h2 {
   margin-bottom: 14px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 36px;
@@ -981,20 +976,12 @@ html {
   font-weight: 400;
 }
 
-.form__description {
+.feedback__form p {
   margin-top: 10px;
   margin-bottom: 35px;
 }
 
-.form__user-question,
-.form__user-name {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-  border: none;
-}
-
-.form__row {
+.feedback__form-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1002,6 +989,26 @@ html {
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+}
+
+.feedback__form-wrapper textarea {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.feedback__form-button {
+  max-width: 265px;
+}
+
+.form {
+  max-width: 580px;
+  color: #ffffff;
+}
+
+.form__wrapper {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
 }
 
 .form__button {
@@ -1014,10 +1021,124 @@ html {
   border-radius: 3px;
 }
 
+.form__button:hover {
+  background-color: #375ea8;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .form__checkbox {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+}
+
+.form input:not([type=checkbox], [type=radio]),
+.form textarea {
+  width: 100%;
+  font: inherit;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: #019bdf;
+}
+
+.form input:not([type=checkbox], [type=radio])::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #f2f5f6;
+}
+
+.form input:not([type=checkbox], [type=radio])::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: #f2f5f6;
+}
+
+.form input:not([type=checkbox], [type=radio]):-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.form input:not([type=checkbox], [type=radio])::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.form input:not([type=checkbox], [type=radio])::placeholder,
+.form textarea::placeholder {
+  color: #f2f5f6;
+}
+
+.form input:not([type=checkbox], [type=radio]):hover,
+.form textarea:hover {
+  opacity: 0.8;
+}
+
+.form input:not([type=checkbox], [type=radio]):active,
+.form textarea:active {
+  opacity: 0.6;
+}
+
+.form textarea {
+  width: 100%;
+  height: 155px;
+  padding: 20px 15px 25px;
+  margin-bottom: 6px;
+}
+
+.form input:not([type=checkbox], [type=radio]) {
+  min-height: 50px;
+  padding: 15px;
+}
+
+.form input:not([type=checkbox], [type=radio]):focus[aria-invalid=true] {
+  background-color: #ff5100;
+}
+
+.form input:not([type=checkbox], [type=radio]):focus[aria-invalid=false] {
+  background-color: rgba(31, 161, 93, 0.8);
+}
+
+.form input:not([type=checkbox], [type=radio])[aria-invalid=true] {
+  outline: 1px solid #ff5100;
+}
+
+.form input:disabled,
+.form input:disabled:hover,
+.form input:disabled:active {
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.form input:disabled::-webkit-input-placeholder,
+.form input:disabled:hover::-webkit-input-placeholder,
+.form input:disabled:active::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.form input:disabled::-moz-placeholder,
+.form input:disabled:hover::-moz-placeholder,
+.form input:disabled:active::-moz-placeholder {
+  color: #000000;
+}
+
+.form input:disabled:-ms-input-placeholder,
+.form input:disabled:hover:-ms-input-placeholder,
+.form input:disabled:active:-ms-input-placeholder {
+  color: #000000;
+}
+
+.form input:disabled::-ms-input-placeholder,
+.form input:disabled:hover::-ms-input-placeholder,
+.form input:disabled:active::-ms-input-placeholder {
+  color: #000000;
+}
+
+.form input:disabled::placeholder,
+.form input:disabled:hover::placeholder,
+.form input:disabled:active::placeholder {
+  color: #000000;
 }
 
 .control {
@@ -1087,120 +1208,6 @@ html {
 
 .control input:disabled::after {
   opacity: 0.2;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]),
-.get-call-form textarea {
-  width: 100%;
-  font: inherit;
-  color: #ffffff;
-  border: none;
-  border-radius: 3px;
-  background-color: #019bdf;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio])::-webkit-input-placeholder,
-.get-call-form textarea::-webkit-input-placeholder {
-  color: #f2f5f6;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio])::-moz-placeholder,
-.get-call-form textarea::-moz-placeholder {
-  color: #f2f5f6;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]):-ms-input-placeholder,
-.get-call-form textarea:-ms-input-placeholder {
-  color: #f2f5f6;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio])::-ms-input-placeholder,
-.get-call-form textarea::-ms-input-placeholder {
-  color: #f2f5f6;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio])::placeholder,
-.get-call-form textarea::placeholder {
-  color: #f2f5f6;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]):hover,
-.get-call-form textarea:hover {
-  opacity: 0.8;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]):active,
-.get-call-form textarea:active {
-  opacity: 0.6;
-}
-
-.get-call-form textarea {
-  width: 100%;
-  height: 155px;
-  padding: 20px 15px 25px;
-  margin-bottom: 6px;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]) {
-  min-height: 50px;
-  padding: 15px;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]):focus[aria-invalid=true] {
-  background-color: #ff5100;
-}
-
-.get-call-form input:not([type=checkbox], [type=radio]):focus[aria-invalid=false] {
-  background-color: rgba(31, 161, 93, 0.8);
-}
-
-.get-call-form input:not([type=checkbox], [type=radio])[aria-invalid=true] {
-  outline: 1px solid #ff5100;
-}
-
-.get-call-form__button:hover {
-  background-color: #375ea8;
-}
-
-.get-call-form__button:active {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.get-call-form input:disabled,
-.get-call-form input:disabled:hover,
-.get-call-form input:disabled:active {
-  background-color: #ffffff;
-  opacity: 0.2;
-}
-
-.get-call-form input:disabled::-webkit-input-placeholder,
-.get-call-form input:disabled:hover::-webkit-input-placeholder,
-.get-call-form input:disabled:active::-webkit-input-placeholder {
-  color: #000000;
-}
-
-.get-call-form input:disabled::-moz-placeholder,
-.get-call-form input:disabled:hover::-moz-placeholder,
-.get-call-form input:disabled:active::-moz-placeholder {
-  color: #000000;
-}
-
-.get-call-form input:disabled:-ms-input-placeholder,
-.get-call-form input:disabled:hover:-ms-input-placeholder,
-.get-call-form input:disabled:active:-ms-input-placeholder {
-  color: #000000;
-}
-
-.get-call-form input:disabled::-ms-input-placeholder,
-.get-call-form input:disabled:hover::-ms-input-placeholder,
-.get-call-form input:disabled:active::-ms-input-placeholder {
-  color: #000000;
-}
-
-.get-call-form input:disabled::placeholder,
-.get-call-form input:disabled:hover::placeholder,
-.get-call-form input:disabled:active::placeholder {
-  color: #000000;
 }
 
 .modal {
@@ -1280,22 +1287,6 @@ html {
   background-color: #00b2ff;
 }
 
-.modal__form {
-  display: -ms-grid;
-  display: grid;
-  width: 420px;
-  margin: 0 auto;
-  row-gap: 20px;
-}
-
-.modal__form-button {
-  min-height: 45px;
-  font-size: 16px;
-  line-height: 19px;
-  background-color: #041827;
-  border-radius: 3px;
-}
-
 .modal__title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -1305,10 +1296,20 @@ html {
   line-height: 42px;
 }
 
-.modal__checkbox {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
+.modal__form p {
+  margin-top: 10px;
+  margin-bottom: 37px;
+  font-size: 16px;
+  line-height: 21.5px;
+}
+
+.modal__form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", "arial", sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 400;
 }
 
 /* @mixin hover-focus {
@@ -1554,28 +1555,24 @@ html {
     margin: auto;
   }
 
+  .feedback__form h2 {
+    margin-bottom: 10px;
+  }
+
+  .feedback__form p {
+    margin-bottom: 23px;
+  }
+
   .form {
     max-width: 670px;
   }
 
-  .form__title {
-    margin-bottom: 10px;
-  }
-
-  .form__description {
-    margin-bottom: 23px;
-  }
-
-  .form__button {
-    max-width: 265px;
+  .form textarea {
+    padding-top: 30px;
   }
 
   .control input {
     margin-left: 0;
-  }
-
-  .get-call-form textarea {
-    padding-top: 30px;
   }
 
   .modal.is-active {
@@ -1920,31 +1917,39 @@ html {
     padding: 20px 25px 85px;
   }
 
-  .form__title {
+  .feedback__form h2 {
     font-size: 30px;
     line-height: 42px;
   }
 
-  .form__description {
+  .feedback__form p {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 19px;
   }
 
-  .form__row {
+  .feedback__form-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+  }
+
+  .feedback__form-wrapper textarea {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+  }
+
+  .feedback__form-button {
+    max-width: 100%;
+  }
+
+  .form textarea {
+    height: 180px;
+    padding-top: 22px;
   }
 
   .control input {
     margin-left: 5px;
     margin-bottom: 9px;
-  }
-
-  .get-call-form textarea {
-    height: 180px;
-    padding-top: 22px;
   }
 }
 
