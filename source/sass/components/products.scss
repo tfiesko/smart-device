@@ -146,21 +146,23 @@
   }
 }
 
-.products__title-desktop-tablet-content {
-  @include vp-768 {
+.products__title span {
+  &:first-child {
+    @include vp-768 {
+      display: none;
+    }
+  }
+
+  &:last-child {
     display: none;
+
+    @include vp-768 {
+      display: block;
+    }
   }
 }
 
-.products__title-mobile-content {
-  display: none;
-
-  @include vp-768 {
-    display: block;
-  }
-}
-
-.products__card-description {
+.products__card h3 {
   position: absolute;
   top: 48px;
   left: 40px;

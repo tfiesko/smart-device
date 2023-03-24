@@ -81,7 +81,7 @@
   }
 }
 
-.header-contacts__item-text {
+.header-contacts__item span {
   @include vp-1023 {
     display: none;
   }

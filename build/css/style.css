@@ -913,11 +913,11 @@ html {
   font-weight: 400;
 }
 
-.products__title-mobile-content {
+.products__title span:last-child {
   display: none;
 }
 
-.products__card-description {
+.products__card h3 {
   position: absolute;
   top: 48px;
   left: 40px;
@@ -1033,10 +1033,6 @@ html {
 
 .control:hover {
   color: #375ea8;
-}
-
-input:disabled {
-  opacity: 0.6;
 }
 
 .control input {
@@ -1168,6 +1164,43 @@ input:disabled {
 
 .get-call-form__button:active {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.get-call-form input:disabled,
+.get-call-form input:disabled:hover,
+.get-call-form input:disabled:active {
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.get-call-form input:disabled::-webkit-input-placeholder,
+.get-call-form input:disabled:hover::-webkit-input-placeholder,
+.get-call-form input:disabled:active::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.get-call-form input:disabled::-moz-placeholder,
+.get-call-form input:disabled:hover::-moz-placeholder,
+.get-call-form input:disabled:active::-moz-placeholder {
+  color: #000000;
+}
+
+.get-call-form input:disabled:-ms-input-placeholder,
+.get-call-form input:disabled:hover:-ms-input-placeholder,
+.get-call-form input:disabled:active:-ms-input-placeholder {
+  color: #000000;
+}
+
+.get-call-form input:disabled::-ms-input-placeholder,
+.get-call-form input:disabled:hover::-ms-input-placeholder,
+.get-call-form input:disabled:active::-ms-input-placeholder {
+  color: #000000;
+}
+
+.get-call-form input:disabled::placeholder,
+.get-call-form input:disabled:hover::placeholder,
+.get-call-form input:disabled:active::placeholder {
+  color: #000000;
 }
 
 .modal {
@@ -1351,7 +1384,7 @@ input:disabled {
     margin: auto;
   }
 
-  .header-contacts__item-text {
+  .header-contacts__item span {
     display: none;
   }
 
@@ -1499,7 +1532,7 @@ input:disabled {
     margin-bottom: 40px;
   }
 
-  .products__card-description {
+  .products__card h3 {
     top: 36px;
     left: 45px;
   }
@@ -1869,15 +1902,15 @@ input:disabled {
     line-height: 39px;
   }
 
-  .products__title-desktop-tablet-content {
+  .products__title span:first-child {
     display: none;
   }
 
-  .products__title-mobile-content {
+  .products__title span:last-child {
     display: block;
   }
 
-  .products__card-description {
+  .products__card h3 {
     top: 26px;
     left: 30px;
     font-size: 18px;

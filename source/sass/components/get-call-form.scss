@@ -64,3 +64,15 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
+
+.get-call-form input:disabled,
+.get-call-form input:disabled:hover,
+.get-call-form input:disabled:active {
+  background-color: $color-default-white;
+  opacity: 0.2;
+
+
+  &::placeholder {
+    color: $color-default-black;
+  }
+}
