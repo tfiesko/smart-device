@@ -70,6 +70,10 @@
     }
   }
 
+  &[aria-invalid="true"]::before {
+    border-color: $color-error;
+  }
+
   @include vp-1023 {
     margin-left: 0;
   }

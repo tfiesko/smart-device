@@ -50,28 +50,36 @@
               <use xlink:href="img/sprite.svg#stopwatch"></use>
             </svg>
             <h3>Оперативные сроки</h3>
-            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
+            <p>
+              Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки
+            </p>
           </div>
           <div class="advantages__card advantages__card--hired">
             <svg width="35" height="35">
               <use xlink:href="img/sprite.svg#hired"></use>
             </svg>
             <h3>Крупные поставщики</h3>
-            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+            <p>
+              Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.
+            </p>
           </div>
           <div class="advantages__card advantages__card--detective">
             <svg width="35" height="35">
               <use xlink:href="img/sprite.svg#detective"></use>
             </svg>
             <h3>Полная конфиденциальность</h3>
-            <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
+            <p>
+              По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
+            </p>
           </div>
           <div class="advantages__card advantages__card--tag">
             <svg width="35" height="35">
               <use xlink:href="img/sprite.svg#tag"></use>
             </svg>
             <h3>Персонализация стоимости</h3>
-            <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
+            <p>
+              Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
+            </p>
           </div>
         </div>
       </section>
@@ -141,22 +149,22 @@
     </main>
     <section class="feedback">
       <div class="feedback__wrapper" data-form-validate>
-        <form class="feedback__form form" method="post" action="https://echo.htmlacademy.ru/">
-          <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
-          <p class="form__description">
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>
             Мы проконсультируем Вас бесплатно
           </p>
           <div class="feedback__form-wrapper form__wrapper">
-            <div>
+            <div data-validate-type="text" data-limitation="name" data-required>
               <label class="visually-hidden" for="user-name">Имя</label>
-              <input type="text" name="user-name" id="user-name" required placeholder="Имя" data-validate-type="text" data-limitation="name" data-required>
+              <input type="text" name="user-name" id="user-name" required placeholder="Имя">
             </div>
             <div data-validate-type="phone" data-on-input-validate data-required>
               <label class="visually-hidden" for="user-tel">Телефон</label>
               <input type="tel" name="user-tel" id="user-tel" required placeholder="Телефон">
             </div>
             <textarea name="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-            <div class="form__checkbox control">
+            <div class="form__checkbox control" data-validate-type="checkbox" data-required>
               <input type="checkbox" name="agreement" required id="agreement" checked>
               <label for="agreement">Я согласен на обработку  персональных данных</label>
             </div>
@@ -202,27 +210,41 @@
             <div class="footer-nav__wrapper accordion__content" data-accordion="content">
               <ul class="footer-nav__list">
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">О Компании</a>
+                  <a class="footer-nav__link" href="#">
+                    О Компании
+                  </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Продукты</a>
+                  <a class="footer-nav__link" href="#">
+                    Продукты
+                  </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Производство печатных плат</a>
+                  <a class="footer-nav__link" href="#">
+                    Производство печатных плат
+                  </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
+                  <a class="footer-nav__link" href="#">
+                    Монтаж печатных плат
+                  </a>
                 </li>
               </ul>
               <ul class="footer-nav__list">
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Комплектующие</a>
+                  <a class="footer-nav__link" href="#">
+                    Комплектующие
+                  </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Доставка</a>
+                  <a class="footer-nav__link" href="#">
+                    Доставка
+                  </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Контакты</a>
+                  <a class="footer-nav__link" href="#">
+                    Контакты
+                  </a>
                 </li>
               </ul>
             </div>
@@ -253,18 +275,20 @@
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal></button>
           <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
             <h2>Закажите звонок</h2>
-            <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+            <p>
+              Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+            </p>
             <div class="form__wrapper">
-              <div>
+              <div data-validate-type="text" data-limitation="name" data-required>
                 <label class="visually-hidden" for="modal-name">Имя</label>
-                <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus data-validate-type="text" data-limitation="name" data-required>
+                <input type="text" required id="modal-name" name="name" placeholder="Имя" data-focus>
               </div>
-              <div data-on-input-validate data-validate-type="phone" data-required>
+              <div data-validate-type="phone" data-on-input-validate data-required>
                 <label class="visually-hidden" for="modal-tel">Телефон</label>
-                <input type="tel" required id="modal-tel" name="name" placeholder="Телефон">
+                <input type="tel" name="tel" id="modal-tel" required placeholder="Телефон">
               </div>
               <textarea name="user-question" id="modal-question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-              <div class="form__checkbox control">
+              <div class="form__checkbox control" data-validate-type="checkbox" data-required>
                 <input type="checkbox" name="agreement" required id="agreement-modal" checked>
                 <label for="agreement-modal">Я согласен на обработку  персональных данных</label>
               </div>

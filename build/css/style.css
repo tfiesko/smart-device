@@ -1210,6 +1210,10 @@ html {
   opacity: 0.2;
 }
 
+.control input[aria-invalid=true]::before {
+  border-color: #ff5100;
+}
+
 .modal {
   display: none;
 }
