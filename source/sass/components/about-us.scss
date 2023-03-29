@@ -1,4 +1,6 @@
 .about-us {
+  padding: 0 50px;
+
   @include vp-1023 {
     padding-left: 40px;
   }
@@ -51,7 +53,7 @@
 
 .about-us__content {
   max-height: 230px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   overflow-y: hidden;
 

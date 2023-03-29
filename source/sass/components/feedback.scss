@@ -15,7 +15,7 @@
   position: relative;
 
   max-width: 1300px;
-  padding: 135px 50px 255px;
+  padding: 130px 50px 255px;
   margin: 0 auto;
 
   &::before {
@@ -119,6 +119,7 @@
 
 .feedback__form-button {
   max-width: 265px;
+  margin-top: 8px;
 
   @include vp-768 {
     max-width: 100%;
