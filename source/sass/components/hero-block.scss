@@ -26,12 +26,20 @@
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   }
 
+  @supports (background-image: url("../img/main-block-background-desktop.webp")) {
+    background-image: url("../img/main-block-background-desktop.webp");
+  }
+
   @include vp-1023 {
     min-height: 640px;
     padding-top: 180px;
     margin-bottom: 30px;
 
     background-image: url("../img/main-block-background-tablet.jpg");
+
+    @supports (background-image: url("../img/main-block-background-tablet.webp")) {
+      background-image: url("../img/main-block-background-tablet.webp");
+    }
   }
 
   @include vp-768 {
@@ -41,19 +49,33 @@
 
   @include vp-320 {
     background-image: url("../img/main-block-background-mobile.jpg");
+
+    @supports (background-image: url("../img/main-block-background-mobile.webp")) {
+      background-image: url("../img/main-block-background-mobile.webp");
+    }
   }
 
   @include retina {
-    @media (min-width: 768px) {
-      background-image: url("../img/main-block-background-desktop@2x.jpg");
+    background-image: url("../img/main-block-background-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/main-block-background-desktop@2x.webp")) {
+      background-image: url("../img/main-block-background-desktop@2x.webp");
     }
 
-    @include vp-768 {
+    @include vp-1023 {
       background-image: url("../img/main-block-background-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/main-block-background-tablet@2x.webp")) {
+        background-image: url("../img/main-block-background-tablet@2x.webp");
+      }
     }
 
     @include vp-320 {
       background-image: url("../img/main-block-background-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/main-block-background-mobile@2x.webp")) {
+        background-image: url("../img/main-block-background-mobile@2x.webp");
+      }
     }
   }
 }
