@@ -108,6 +108,10 @@
   }
 }
 
+.feedback__form-checkbox {
+  max-width: 240px;
+}
+
 .feedback__form-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

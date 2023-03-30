@@ -1023,6 +1023,10 @@ html {
   margin-bottom: 35px;
 }
 
+.feedback__form-checkbox {
+  max-width: 240px;
+}
+
 .feedback__form-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1082,7 +1086,7 @@ html {
 .form textarea {
   width: 100%;
   font: inherit;
-  color: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 3px;
   background-color: #019bdf;
@@ -1255,6 +1259,10 @@ html {
 
 .control input[aria-invalid=true]::before {
   border-color: #ff5100;
+}
+
+.control label {
+  opacity: 0.8;
 }
 
 .modal {
@@ -1850,7 +1858,15 @@ html {
   .hero-block {
     min-height: 560px;
     padding: 150px 25px 50px;
+    background-image: url("../img/main-block-background-mobile.jpg");
+    background-position: bottom;
   }
+
+@supports (background-image: url("../img/main-block-background-mobile.webp")) {
+    .hero-block {
+      background-image: url("../img/main-block-background-mobile.webp");
+    }
+}
 
   .hero-block h1 {
     font-size: 36px;
@@ -2038,19 +2054,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
-  .hero-block {
-    background-image: url("../img/main-block-background-mobile.jpg");
-  }
-
-@supports (background-image: url("../img/main-block-background-mobile.webp")) {
-    .hero-block {
-      background-image: url("../img/main-block-background-mobile.webp");
-    }
-}
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 320px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 320px), (min-resolution: 144dpi) and (max-width: 320px), (min-resolution: 1.5dppx) and (max-width: 320px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .hero-block {
     background-image: url("../img/main-block-background-mobile@2x.jpg");
   }

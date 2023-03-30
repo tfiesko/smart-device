@@ -45,10 +45,9 @@
   @include vp-768 {
     min-height: 560px;
     padding: 150px 25px 50px;
-  }
 
-  @include vp-320 {
     background-image: url("../img/main-block-background-mobile.jpg");
+    background-position: bottom;
 
     @supports (background-image: url("../img/main-block-background-mobile.webp")) {
       background-image: url("../img/main-block-background-mobile.webp");
@@ -70,7 +69,7 @@
       }
     }
 
-    @include vp-320 {
+    @include vp-768 {
       background-image: url("../img/main-block-background-mobile@2x.jpg");
 
       @supports (background-image: url("../img/main-block-background-mobile@2x.webp")) {
