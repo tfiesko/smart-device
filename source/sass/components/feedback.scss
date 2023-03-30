@@ -34,8 +34,16 @@
 
     transform: translateY(-50%);
 
+    @supports (background-image: url("../img/paper-airplane.webp")) {
+      background-image: url("../img/paper-airplane.webp");
+    }
+
     @include retina {
       background-image: url("../img/paper-airplane@2x.png");
+
+      @supports (background-image: url("../img/paper-airplane@2x.webp")) {
+        background-image: url("../img/paper-airplane@2x.webp");
+      }
     }
   }
 
