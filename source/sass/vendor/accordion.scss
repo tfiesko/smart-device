@@ -60,14 +60,16 @@
     &__button {
       display: block;
       width: 100%;
-      min-height: 60px;
+      min-height: 58px;
       padding: 10px 25px;
       padding-right: 160px;
 
+      font-family: "Roboto Condensed", "Arial", sans-serif;
       font-size: 15px;
       line-height: 16px;
       text-transform: uppercase;
       text-align: left;
+      letter-spacing: 0.05em;
 
       background-color: transparent;
       border: none;

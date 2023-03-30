@@ -10,6 +10,10 @@
 
   list-style: none;
 
+  @include vp-1023 {
+    margin-top: 5px;
+  }
+
   @include vp-768 {
     margin-left: 0;
   }

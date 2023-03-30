@@ -290,6 +290,7 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -942,6 +943,7 @@ html {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  max-width: 235px;
   padding: 48px 40px 0;
   margin: 0;
   color: #ffffff;
@@ -1270,8 +1272,8 @@ html {
 
 .modal__close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -1308,23 +1310,15 @@ html {
 
 .modal__content {
   position: relative;
-  max-width: 500px;
+  width: 500px;
   padding: 40px;
   color: #ffffff;
   background-color: #00b2ff;
 }
 
-.modal__title {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-family: "Roboto Condensed", "arial", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .modal__form p {
-  margin-top: 10px;
+  max-width: 380px;
+  margin-top: 5px;
   margin-bottom: 37px;
   font-size: 16px;
   line-height: 21.5px;
@@ -1332,11 +1326,20 @@ html {
 
 .modal__form h2 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: "Roboto Condensed", "arial", sans-serif;
   font-size: 30px;
   line-height: 42px;
   font-weight: 400;
+}
+
+.modal__form-wrapper {
+  row-gap: 19px;
+}
+
+.modal__form-checkbox input {
+  margin-top: 0;
+  margin-left: 10px;
 }
 
 /* @mixin hover-focus {
@@ -1426,13 +1429,14 @@ html {
   }
 
   .page-footer__container {
-    padding-right: 10px;
+    padding-right: 0;
   }
 
   .page-footer__navigation-and-contacts {
     -webkit-column-gap: 141px;
     -moz-column-gap: 141px;
     column-gap: 141px;
+    padding-right: 10px;
   }
 
   .page-footer__logo-and-social-wrapper {
@@ -1444,6 +1448,10 @@ html {
     justify-content: space-between;
     width: 100%;
     margin-right: 0;
+  }
+
+  .social {
+    margin-top: 5px;
   }
 
   .footer-nav__wrapper {
@@ -1480,7 +1488,7 @@ html {
   }
 
   .hero-block {
-    min-height: 655px;
+    min-height: 640px;
     padding-top: 180px;
     margin-bottom: 30px;
     background-image: url("../img/main-block-background-tablet.jpg");
@@ -1511,6 +1519,8 @@ html {
 
   .advantages__card {
     padding-bottom: 17px;
+    margin-bottom: 28px;
+    width: 47.8%;
     min-height: 360px;
   }
 
@@ -1523,21 +1533,29 @@ html {
   }
 
   .about-us {
-    padding-left: 40px;
+    padding-left: 45px;
   }
 
   .about-us__container {
-    padding-right: 55px;
     margin: 0 auto 80px;
   }
 
   .about-us__content {
     max-height: 320px;
+    margin-bottom: 17px;
+  }
+
+  .about-us__content h2 {
+    margin-bottom: 12px;
+  }
+
+  .about-us__content h2 + p {
+    margin-top: 12px;
   }
 
   .products {
     padding-top: 40px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
   }
 
   .products__card-list {
@@ -1547,7 +1565,7 @@ html {
   }
 
   .products__title {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .products__card h3 {
@@ -1575,6 +1593,7 @@ html {
   }
 
   .feedback__form h2 {
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -1659,13 +1678,15 @@ html {
   .accordion__button {
     display: block;
     width: 100%;
-    min-height: 60px;
+    min-height: 58px;
     padding: 10px 25px;
     padding-right: 160px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 15px;
     line-height: 16px;
     text-transform: uppercase;
     text-align: left;
+    letter-spacing: 0.05em;
     background-color: transparent;
     border: none;
     color: #ffffff;
@@ -1689,6 +1710,7 @@ html {
   }
 
   .header-contacts {
+    min-height: 45px;
     padding-bottom: 5px;
   }
 
@@ -1698,7 +1720,8 @@ html {
   }
 
   .main-header {
-    min-height: 60px;
+    min-height: 45px;
+    padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -1725,6 +1748,7 @@ html {
     width: 100%;
     -ms-grid-columns: auto;
     grid-template-columns: auto;
+    padding-right: 0;
   }
 
   .page-footer__logo-and-social-wrapper {
@@ -1778,6 +1802,10 @@ html {
     opacity: 0.5;
   }
 
+  .footer-contacts {
+    font-size: 14px;
+  }
+
   .footer-contacts__phone-list {
     padding-left: 25px;
   }
@@ -1785,11 +1813,12 @@ html {
   .footer-contacts__address {
     padding-left: 25px;
     margin-bottom: 15px;
+    line-height: 19px;
   }
 
   .hero-block {
-    min-height: 577px;
-    padding: 167px 25px 50px;
+    min-height: 560px;
+    padding: 150px 25px 50px;
   }
 
   .hero-block h1 {
@@ -1830,6 +1859,7 @@ html {
     padding: 30px 30px 42px 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     min-height: 325px;
   }
 
@@ -1935,7 +1965,7 @@ html {
   }
 
   .feedback__wrapper {
-    padding: 20px 25px 85px;
+    padding: 15px 25px 92px;
   }
 
   .feedback__form h2 {
@@ -1961,14 +1991,17 @@ html {
 
   .feedback__form-button {
     max-width: 100%;
+    margin-top: 0;
   }
 
   .form textarea {
     height: 180px;
     padding-top: 22px;
+    margin-bottom: 10px;
   }
 
   .control input {
+    margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 9px;
   }

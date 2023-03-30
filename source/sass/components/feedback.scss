@@ -49,7 +49,7 @@
   }
 
   @include vp-768 {
-    padding: 20px 25px 85px;
+    padding: 15px 25px 92px;
   }
 }
 
@@ -74,6 +74,7 @@
   font-weight: 400;
 
   @include vp-1023 {
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -124,5 +125,6 @@
 
   @include vp-768 {
     max-width: 100%;
+    margin-top: 0;
   }
 }

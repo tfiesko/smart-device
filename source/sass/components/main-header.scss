@@ -15,7 +15,8 @@
   }
 
   @include vp-768 {
-    min-height: 60px;
+    min-height: 45px;
+    padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
   }

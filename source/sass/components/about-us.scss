@@ -2,7 +2,7 @@
   padding: 0 50px;
 
   @include vp-1023 {
-    padding-left: 40px;
+    padding-left: 45px;
   }
 
   @include vp-768 {
@@ -32,7 +32,6 @@
   }
 
   @include vp-1023 {
-    padding-right: 55px;
     margin: 0 auto 80px;
   }
 
@@ -59,6 +58,7 @@
 
   @include vp-1023 {
     max-height: 320px;
+    margin-bottom: 17px;
   }
 
   @include vp-768 {
@@ -84,6 +84,10 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 50px;
+
+    @include vp-1023 {
+      margin-bottom: 12px;
+    }
   }
 
   h2:first-of-type {
@@ -99,6 +103,10 @@
 
   h2 + p {
     margin-top: 15px;
+
+    @include vp-1023 {
+      margin-top: 12px;
+    }
   }
 }
 
