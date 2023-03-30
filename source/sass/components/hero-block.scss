@@ -28,11 +28,9 @@
 
   @include vp-1023 {
     min-height: 655px;
-    padding-top: 195px;
+    padding-top: 180px;
     margin-bottom: 30px;
-  }
 
-  @include vp-768 {
     background-image: url("../img/main-block-background-tablet.jpg");
   }
 
@@ -80,7 +78,7 @@
   font-size: 80px;
   line-height: 94px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.07em;
 
   @include vp-1023 {
     margin-bottom: 20px;
