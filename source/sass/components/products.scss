@@ -47,7 +47,8 @@
 .products__card {
   position: relative;
 
-  max-height: 650px;
+  display: grid;
+  min-height: 250px;
 
   &:hover {
     opacity: 0.8;
@@ -95,10 +96,6 @@
     transform: rotate(45deg);
   }
 
-  @include vp-1023 {
-    height: 250px;
-  }
-
   @include vp-768 {
     &::before {
       width: 40px;
@@ -116,14 +113,16 @@
 }
 
 .products__card img {
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-  @include vp-1023 {
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
-  }
+.products__card-picture-wrapper {
+  grid-column: -1 / 1;
+  grid-row: -1 / 1;
+  width: 100%;
+  height: 100%;
 }
 
 .products__title {
@@ -163,9 +162,8 @@
 }
 
 .products__card h3 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-column: -1 / 1;
+  grid-row: -1 / 1;
 
   max-width: 470px;
   max-height: 85%;
@@ -181,7 +179,6 @@
 
   @include vp-1023 {
     max-width: 195px;
-    max-height: 180px;
     padding-top: 36px;
     padding-left: 45px;
     padding-right: 0;
