@@ -865,6 +865,8 @@ html {
   position: relative;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 80px;
+  grid-template-rows: 1fr 80px;
   min-height: 250px;
 }
 
@@ -936,13 +938,11 @@ html {
 }
 
 .products__card h3 {
-  grid-column: -1/1;
-  grid-row: -1/1;
-  max-width: 470px;
-  max-height: 85%;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 36%;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 48px 40px 0;
   margin: 0;
   color: #ffffff;
   font-size: 20px;
@@ -1894,6 +1894,11 @@ html {
 
   .products__wrapper {
     margin-bottom: 8px;
+  }
+
+  .products__card {
+    -ms-grid-rows: 1fr 60px;
+    grid-template-rows: 1fr 60px;
   }
 
   .products__card::before {

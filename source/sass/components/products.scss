@@ -48,6 +48,7 @@
   position: relative;
 
   display: grid;
+  grid-template-rows: 1fr 80px;
   min-height: 250px;
 
   &:hover {
@@ -97,6 +98,8 @@
   }
 
   @include vp-768 {
+    grid-template-rows: 1fr 60px;
+
     &::before {
       width: 40px;
       height: 40px;
@@ -162,14 +165,10 @@
 }
 
 .products__card h3 {
-  grid-column: -1 / 1;
-  grid-row: -1 / 1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 
-  max-width: 470px;
-  max-height: 85%;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 36%;
+  padding: 48px 40px 0;
   margin: 0;
 
   color: $color-default-white;
