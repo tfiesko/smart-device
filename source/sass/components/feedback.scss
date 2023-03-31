@@ -18,31 +18,33 @@
   padding: 130px 50px 250px;
   margin: 0 auto;
 
-  &::before {
-    position: absolute;
-    left: 42px;
-    top: 46%;
-    content: "";
+  @include desktop-width-only {
+    &::before {
+      position: absolute;
+      left: 42px;
+      top: 46%;
+      content: "";
 
-    display: block;
-    width: 510px;
-    height: 285px;
+      display: block;
+      width: 510px;
+      height: 285px;
 
-    background-image: url("../img/paper-airplane.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+      background-image: url("../img/paper-airplane.png");
+      background-size: cover;
+      background-repeat: no-repeat;
 
-    transform: translateY(-50%);
+      transform: translateY(-50%);
 
-    @supports (background-image: url("../img/paper-airplane.webp")) {
-      background-image: url("../img/paper-airplane.webp");
-    }
+      @supports (background-image: url("../img/paper-airplane.webp")) {
+        background-image: url("../img/paper-airplane.webp");
+      }
 
-    @include retina {
-      background-image: url("../img/paper-airplane@2x.png");
+      @include retina {
+        background-image: url("../img/paper-airplane@2x.png");
 
-      @supports (background-image: url("../img/paper-airplane@2x.webp")) {
-        background-image: url("../img/paper-airplane@2x.webp");
+        @supports (background-image: url("../img/paper-airplane@2x.webp")) {
+          background-image: url("../img/paper-airplane@2x.webp");
+        }
       }
     }
   }
@@ -50,14 +52,10 @@
   @include vp-1023 {
     padding-top: 15px;
     padding-bottom: 125px;
-
-    &::before {
-      content: none;
-    }
   }
 
   @include vp-768 {
-    padding: 15px 25px 92px;
+    padding: 15px 25px 87px;
   }
 }
 
@@ -110,6 +108,10 @@
 
 .feedback__form-checkbox {
   max-width: 240px;
+
+  @include vp-768 {
+    margin-top: 5px;
+  }
 }
 
 .feedback__form-wrapper {
