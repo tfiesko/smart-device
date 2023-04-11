@@ -71,7 +71,7 @@
   }
 
   @include vp-768 {
-    height: 180px;
+    max-height: 180px;
     padding-top: 22px;
     margin-bottom: 10px;
   }

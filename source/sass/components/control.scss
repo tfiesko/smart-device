@@ -1,6 +1,6 @@
 .control {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
   font-size: 14px;
   line-height: 16px;
@@ -13,8 +13,8 @@
 .control input {
   position: relative;
 
-  align-self: center;
-  margin: 20px 10px 0 12px;
+  margin-right: 10px;
+
   appearance: none;
   cursor: pointer;
 

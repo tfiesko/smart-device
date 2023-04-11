@@ -453,9 +453,9 @@ html {
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 812px;
-  -webkit-column-gap: 104px;
-  -moz-column-gap: 104px;
-  column-gap: 104px;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
   padding-top: 10px;
 }
 
@@ -548,11 +548,12 @@ html {
 
 .footer-nav__link {
   color: inherit;
+  opacity: 0.7;
 }
 
 .footer-nav__link:hover {
   text-decoration: underline;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .footer-nav__link:active {
@@ -596,6 +597,7 @@ html {
 }
 
 .footer-contacts__title {
+  padding-left: 3px;
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "arial", sans-serif;
@@ -609,16 +611,31 @@ html {
 .footer-contacts__phone-list {
   padding: 0;
   margin: 0;
+  padding-left: 3px;
   list-style: none;
   font-style: normal;
 }
 
 .footer-contacts__phone-item {
   margin-bottom: 10px;
+}
+
+.footer-contacts__phone-link {
   color: #f2f5f6;
+  opacity: 0.7;
+}
+
+.footer-contacts__phone-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.footer-contacts__phone-link:active {
+  opacity: 0.4;
 }
 
 .footer-contacts__address {
+  padding-left: 3px;
   margin: 0;
   margin-bottom: 10px;
   font-style: normal;
@@ -964,6 +981,9 @@ html {
 }
 
 .feedback__form {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin-left: auto;
 }
 
@@ -983,6 +1003,8 @@ html {
 
 .feedback__form-checkbox {
   max-width: 240px;
+  padding-left: 10px;
+  margin-top: 20px;
 }
 
 .feedback__form-wrapper {
@@ -1150,9 +1172,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1163,10 +1185,7 @@ html {
 
 .control input {
   position: relative;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  margin: 20px 10px 0 12px;
+  margin-right: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1716,6 +1735,11 @@ html {
     margin-bottom: 23px;
   }
 
+  .feedback__form-checkbox {
+    padding-left: 2px;
+    margin-top: 10px;
+  }
+
   .form {
     max-width: 670px;
   }
@@ -1796,10 +1820,6 @@ html {
 
   .accordion__element-title {
     display: none;
-  }
-
-  .accordion__element.is-active > .accordion__button {
-    opacity: 0.5;
   }
 
   .accordion__button {
@@ -2111,6 +2131,7 @@ html {
   }
 
   .feedback__form-checkbox {
+    max-width: 100%;
     margin-top: 5px;
   }
 
@@ -2130,7 +2151,7 @@ html {
   }
 
   .form textarea {
-    height: 180px;
+    max-height: 180px;
     padding-top: 22px;
     margin-bottom: 10px;
   }

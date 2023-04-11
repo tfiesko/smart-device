@@ -53,10 +53,6 @@
       display: none;
     }
 
-    &__element.is-active > &__button {
-      opacity: 0.5;
-    }
-
     &__button {
       display: block;
       width: 100%;
