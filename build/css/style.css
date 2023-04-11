@@ -893,13 +893,14 @@ html {
   display: block;
   width: 8px;
   height: 8px;
-  border: 1px solid #ffffff;
+  -webkit-box-shadow: inset 1px 1px 0 0 #ffffff;
+  box-shadow: inset 1px 1px 0 0 #ffffff;
   border-bottom: none;
   border-left: none;
   border-radius: 1px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .products__card img {

@@ -153,34 +153,34 @@
             </div>
           </div>
         </section>
+        <section class="feedback">
+          <div class="feedback__wrapper" data-form-validate>
+            <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>
+                Мы проконсультируем Вас бесплатно
+              </p>
+              <div class="feedback__form-wrapper form__wrapper">
+                <div data-validate-type="text" data-limitation="name" data-required>
+                  <label class="visually-hidden" for="user-name">Имя</label>
+                  <input type="text" name="user-name" id="user-name" required placeholder="Имя">
+                </div>
+                <div data-validate-type="phone" data-on-input-validate data-required>
+                  <label class="visually-hidden" for="user-tel">Телефон</label>
+                  <input type="tel" name="user-tel" id="user-tel" required placeholder="Телефон">
+                </div>
+                <textarea name="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <div class="feedback__form-checkbox form__checkbox control" data-validate-type="checkbox" data-required>
+                  <input type="checkbox" name="agreement" required id="agreement" checked>
+                  <label for="agreement">Я согласен на обработку <br>
+                    персональных данных</label>
+                </div>
+                <button class="form__button feedback__form-button button" type="submit">Задать вопрос</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
-      <section class="feedback">
-        <div class="feedback__wrapper" data-form-validate>
-          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>
-              Мы проконсультируем Вас бесплатно
-            </p>
-            <div class="feedback__form-wrapper form__wrapper">
-              <div data-validate-type="text" data-limitation="name" data-required>
-                <label class="visually-hidden" for="user-name">Имя</label>
-                <input type="text" name="user-name" id="user-name" required placeholder="Имя">
-              </div>
-              <div data-validate-type="phone" data-on-input-validate data-required>
-                <label class="visually-hidden" for="user-tel">Телефон</label>
-                <input type="tel" name="user-tel" id="user-tel" required placeholder="Телефон">
-              </div>
-              <textarea name="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-              <div class="feedback__form-checkbox form__checkbox control" data-validate-type="checkbox" data-required>
-                <input type="checkbox" name="agreement" required id="agreement" checked>
-                <label for="agreement">Я согласен на обработку <br>
-                  персональных данных</label>
-              </div>
-              <button class="form__button feedback__form-button button" type="submit">Задать вопрос</button>
-            </div>
-          </form>
-        </div>
-      </section>
       <footer class="page-footer">
         <div class="page-footer__container">
           <div class="page-footer__logo-and-social-wrapper">

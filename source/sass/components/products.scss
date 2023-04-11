@@ -89,12 +89,12 @@
     width: 8px;
     height: 8px;
 
-    border: 1px solid $color-default-white;
+    box-shadow: inset 1px 1px 0 0 $color-default-white;
     border-bottom: none;
     border-left: none;
     border-radius: 1px;
 
-    transform: rotate(45deg);
+    transform: rotate(135deg);
   }
 
   @include vp-768 {
