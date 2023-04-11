@@ -16,6 +16,7 @@
   align-self: center;
   margin: 20px 10px 0 12px;
   appearance: none;
+  cursor: pointer;
 
   &:hover {
     &::before,
@@ -87,4 +88,5 @@
 
 .control label {
   opacity: 0.8;
+  cursor: pointer;
 }

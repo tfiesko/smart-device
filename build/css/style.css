@@ -955,15 +955,15 @@ html {
 }
 
 .feedback__wrapper {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1300px;
   padding: 130px 50px 250px;
   margin: 0 auto;
 }
 
 .feedback__form {
-  position: relative;
-  z-index: 1;
   margin-left: auto;
 }
 
@@ -1170,6 +1170,7 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .control input:hover::before,
@@ -1221,6 +1222,7 @@ html {
 
 .control label {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .modal {
@@ -1443,7 +1445,7 @@ html {
 }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1023px), (min-resolution: 144dpi) and (min-width: 1023px), (min-resolution: 1.5dppx) and (min-width: 1023px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .hero-block {
     background-image: url("../img/main-block-background-desktop@2x.jpg");
   }
@@ -1455,21 +1457,23 @@ html {
 }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .feedback__wrapper::before {
-    position: absolute;
-    left: 42px;
-    top: 46%;
     content: "";
     display: block;
-    width: 510px;
-    height: 285px;
+    max-width: 530px;
+    min-height: 285px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 55px;
+    margin-right: 20px;
     background-image: url("../img/paper-airplane.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 
 @supports (background-image: url("../img/paper-airplane.webp")) {
@@ -1479,7 +1483,7 @@ html {
 }
 }
 
-@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1023px) and (min-resolution: 144dpi), (min-width: 1023px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .feedback__wrapper::before {
     background-image: url("../img/paper-airplane@2x.png");
   }
