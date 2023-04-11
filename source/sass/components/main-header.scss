@@ -34,7 +34,7 @@
   margin: 0 auto;
 
   @include vp-1023 {
-    padding-right: 20px;
+    padding-right: 0;
   }
 
   @include vp-768 {

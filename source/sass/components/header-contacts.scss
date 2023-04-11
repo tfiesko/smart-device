@@ -1,22 +1,42 @@
 .header-contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(155px, auto));
   min-height: 60px;
-  max-width: 43.3%;
-  padding-left: 10px;
+  max-width: 700px;
+  padding-left: calc(35% - 300px);
   padding-right: 10px;
+  margin: 0 auto;
+
+  list-style: none;
 
   @include vp-1023 {
-    max-width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: calc(100% - 215px);
     padding: 0;
+    margin: 0;
     padding-bottom: 15px;
   }
 
   @include vp-768 {
     min-height: 45px;
     padding-bottom: 5px;
+    max-width: calc(100% - 40px);
+  }
+}
+
+.header-contacts__list-item {
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    margin-right: 20px;
+  }
+
+  @include vp-768 {
+    margin-right: 0;
+    margin-left: 20px;
   }
 }
 
