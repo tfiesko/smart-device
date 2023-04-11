@@ -17,10 +17,8 @@
 
 .page-footer__container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1225px;
-  padding-right: 40px;
   margin: 0 auto;
 
   @include vp-1023 {
@@ -36,19 +34,22 @@
 
 .page-footer__navigation-and-contacts {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: minmax(250px, 1fr) minmax(250px, auto);
+  column-gap: 20px;
   flex-grow: 1;
-  max-width: 812px;
-  column-gap: 100px;
+  flex-basis: 400px;
+  max-width: 850px;
 
   padding-top: 10px;
+  padding-right: 38px;
 
   @include vp-1023 {
-    column-gap: 141px;
+    column-gap: 104px;
     padding-right: 10px;
   }
 
   @include vp-768 {
+    flex-basis: auto;
     width: 100%;
     grid-template-columns: auto;
     padding-right: 0;
