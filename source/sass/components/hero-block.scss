@@ -45,7 +45,9 @@
   @include vp-768 {
     min-height: 560px;
     padding: 150px 25px 50px;
+  }
 
+  @include vp-320 {
     background-image: url("../img/main-block-background-mobile.jpg");
     background-position: bottom;
 

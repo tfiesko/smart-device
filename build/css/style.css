@@ -418,6 +418,7 @@ html {
 }
 
 .main-header__contacts {
+  min-width: 405px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1553,6 +1554,10 @@ html {
     padding-right: 20px;
   }
 
+  .main-header__contacts {
+    min-width: auto;
+  }
+
   .page-footer {
     padding-left: 45px;
   }
@@ -1967,15 +1972,7 @@ html {
   .hero-block {
     min-height: 560px;
     padding: 150px 25px 50px;
-    background-image: url("../img/main-block-background-mobile.jpg");
-    background-position: bottom;
   }
-
-@supports (background-image: url("../img/main-block-background-mobile.webp")) {
-    .hero-block {
-      background-image: url("../img/main-block-background-mobile.webp");
-    }
-}
 
   .hero-block h1 {
     font-size: 36px;
@@ -2016,6 +2013,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    min-width: 100%;
     min-height: 325px;
   }
 
@@ -2172,6 +2170,19 @@ html {
 @supports (background-image: url("../img/main-block-background-mobile@2x.webp")) {
     .hero-block {
       background-image: url("../img/main-block-background-mobile@2x.webp");
+    }
+}
+}
+
+@media (max-width: 320px) {
+  .hero-block {
+    background-image: url("../img/main-block-background-mobile.jpg");
+    background-position: bottom;
+  }
+
+@supports (background-image: url("../img/main-block-background-mobile.webp")) {
+    .hero-block {
+      background-image: url("../img/main-block-background-mobile.webp");
     }
 }
 }
